@@ -9,18 +9,17 @@ import org.junit.runner.RunWith;
 
         plugin = {
 
-                "pretty", //generates reports in the console....
+                "pretty",
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt"
         },
 
-        monochrome = true, //makes the console reports more readable......
+        monochrome = true,
         features = "@target/failedRerun.txt",
-        glue = "stepdefinitions", // glue is working for stepdefinitions, path of stepdefinitios, add hooks class to attach screenshot....
-        dryRun = false //generate the missing stepdefinitios. If you wanna see undefined stepdefs you should make it as true....
-
+        glue = "getlandestate.stepdefs.ui_stepdefs",
+        dryRun = false
 )
 public class FailedTestsRunner {
 

@@ -18,11 +18,11 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-        monochrome = true, //makes the console reports more readable......
-        features = "src/test/resources/features",
-        glue = {"stepdefinitions","hooks"}, // glue is working for stepdefinitions, path of stepdefinitios, add hooks class to attach screenshot....
-        dryRun = false, //generate the missing stepdefinitios. If you wanna see undefined stepdefs you should make it as true....
-        tags = "@google_home @e2e"
+        monochrome = true,
+        features = "src/test/resources/features/ui_features",
+        glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
+        dryRun = false,
+        tags = "@TC_01_US13"
 
 )
 public class Runner {
