@@ -5,8 +5,8 @@ Feature: Manager advertisement management
     Given I navigate to "http://64.227.123.49/" using a web browser
     When I click on the Login button on the homepage
     And I enter valid manager credentials with username "boukmanager@gmail.com" and password "12345678Bouk@"
-    And I click on the Back to Site tab on the left side of the dashboard
-    And I go back to the homepage
+    And I click on the Back to Site tab on the left side of the dashboard to go back to the homepage
+
 
 
   @TC_01_US18
