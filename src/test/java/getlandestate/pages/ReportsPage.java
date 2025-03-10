@@ -1,5 +1,6 @@
 package getlandestate.pages;
 
+
 import getlandestate.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -90,5 +91,6 @@ public class ReportsPage {
 
     @FindBy(xpath = "(//select[@id='status']/option[@value='3'])[2]")
     public WebElement selectStatusCancelled2;
+
 
 }
