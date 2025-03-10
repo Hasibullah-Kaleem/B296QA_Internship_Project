@@ -2,9 +2,9 @@
 Feature: Manager report generation
 
   Background: Manager Login and Navigation to the control panel
-    Given I navigate to "http://64.227.123.49/" using a web browser
+    Given I navigate to "http://64.227.123.49/" with a web browser
     When I click on the Login button on the homepage
-    And I enter valid manager credentials with username "boukmanager@gmail.com" and password "12345678Bouk@"
+    And I enter valid manager credentials using the username "boukmanager@gmail.com" and the password "12345678Bouk@"
     And I click on the Reports button at the right side of the dashboard
 
 

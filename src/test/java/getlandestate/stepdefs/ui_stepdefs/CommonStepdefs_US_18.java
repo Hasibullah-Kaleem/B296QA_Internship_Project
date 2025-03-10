@@ -13,7 +13,7 @@ public class CommonStepdefs_US_18 {
     ControlPanelPage controlPanelPage;
     MyTourRequestsPage myTourRequestsPage;
 
-    @Given("I navigate to {string} using a web browser")
+    @Given("I navigate to {string} with a web browser")
     public void iNavigateToUsingAWebBrowser(String url) {
         Driver.getDriver().get(url);
     }
@@ -24,7 +24,7 @@ public class CommonStepdefs_US_18 {
         homePage.loginOption.click();
     }
 
-    @And("I enter valid manager credentials with username {string} and password {string}")
+    @And("I enter valid manager credentials using the username {string} and the password {string}")
     public void iEnterValidManagerCredentialsWithUsernameAndPassword(String email, String password) {
         loginPage = new LoginPage();
         loginPage.emailInput.sendKeys(email);
