@@ -1,5 +1,6 @@
 package getlandestate.pages;
 
+
 import getlandestate.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,4 +46,5 @@ public class MyAdvertsPage {
     public WebElement createButton;
     @FindBy(xpath = "")
     public WebElement successMessageAlert;
+
 }
