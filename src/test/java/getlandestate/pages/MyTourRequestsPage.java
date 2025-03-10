@@ -11,6 +11,18 @@ public class MyTourRequestsPage {
     }
     @FindBy (xpath = "//p[text()='MY RESPONSES']")
     public WebElement myResponesTab;
-    @FindBy (xpath = "(//button[@type='button'])[13]")
+    @FindBy (xpath = "//button[contains(@class, 'approve-button')]")
     public WebElement actionYesTick;
+    @FindBy (xpath = "//button[contains(@class, 'decline-button')]")
+    public WebElement actionNoTick;
+    @FindBy (xpath = "//button[@aria-label='Yes']")
+    public WebElement sureYesTick;
+    @FindBy (xpath = "//button[@aria-label='No']")
+    public WebElement sureNoTick;
+    @FindBy (xpath = "//button[@aria-label='No']")
+    public WebElement requestAcceptedNotification;
+    @FindBy (xpath = "//span[text()='APPROVED']")
+    public WebElement approvedStatus;
+    @FindBy (xpath = "//span[text()='DECLINED']")
+    public WebElement declinedStatus;
 }

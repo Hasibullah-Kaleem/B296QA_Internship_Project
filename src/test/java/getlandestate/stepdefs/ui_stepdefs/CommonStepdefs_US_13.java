@@ -43,24 +43,28 @@ public class CommonStepdefs_US_13 {
 
     @And("I click on the Back to Site tab on the left side of the dashboard")
     public void iClickOnTheBackToSiteTabOnTheLeftSideOfTheDashboard() {
-        JSUtils.JSclickWithTimeout(controlPanelPage.backToSite);
-        //controlPanelPage.backToSite.click();
-        //WaitUtils.waitForClickablility(controlPanelPage.backToSite,5);
+        controlPanelPage = new ControlPanelPage();
+        controlPanelPage.backToSite.click();
+        WaitUtils.waitFor(2);
     }
 
     @And("I click on the User Profile button at the top-right corner of the website")
     public void iClickOnTheUserProfileButtonAtTheTopRightCornerOfTheWebsite() {
         homePage.userProfile.click();
+        WaitUtils.waitFor(2);
     }
 
     @And("I navigate to the My Tour Requests tab from the dropdown menu")
     public void iNavigateToTheMyTourRequestsTabFromTheDropdownMenu() {
         homePage.myTourRequests.click();
+        WaitUtils.waitFor(2);
     }
 
     @And("I go to the My Responses section")
     public void iGoToTheMyResponsesSection() {
+        myTourRequestsPage = new MyTourRequestsPage();
         myTourRequestsPage.myResponesTab.click();
+        WaitUtils.waitFor(2);
     }
 
 }
