@@ -43,4 +43,5 @@ public class ContactMessagesPage {
     @FindBy(xpath = "//button[@title='Apply Filters']//*[name()='svg']")
     public WebElement applyFiltersButton;
 
+
 }
