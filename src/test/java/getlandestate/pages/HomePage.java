@@ -16,4 +16,7 @@ public class HomePage {
     @FindBy(xpath = "//span[text()='My Tour Requests']")
     public WebElement myTourRequests;
 
+    @FindBy(xpath = "//a[@class='nav-link active']")
+    public WebElement contactOption;
+
 }
