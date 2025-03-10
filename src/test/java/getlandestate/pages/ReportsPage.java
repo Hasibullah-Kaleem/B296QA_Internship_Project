@@ -7,10 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ReportsPage {
 
-    ReportsPage () {
+    public ReportsPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-//Reports page first section ADVERTS
+
+    //Reports page sidebqr button
+    @FindBy(xpath = "//a[@title='Reports']\n")
+    public WebElement reportSectionButton;
+
+    //Reports page first section ADVERTS
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[1]")
     public WebElement reportButton1Adverts;
 
@@ -39,7 +44,7 @@ public class ReportsPage {
     public WebElement selectStatusRejected1;
 
 
-//Reports page second section Most popular properties
+    //Reports page second section Most popular properties
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[2]")
     public WebElement reportButton2MostPopularProperties;
 
@@ -47,9 +52,7 @@ public class ReportsPage {
     public WebElement amount;
 
 
-
-
-//Reports page third section USERS
+    //Reports page third section USERS
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[3]")
     public WebElement reportButton3Users;
 
@@ -66,7 +69,7 @@ public class ReportsPage {
     public WebElement selectRoleAdmin;
 
 
-//Reports page fourth section Tour Requests
+    //Reports page fourth section Tour Requests
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[4]")
     public WebElement reportButton4TourRequests;
 
