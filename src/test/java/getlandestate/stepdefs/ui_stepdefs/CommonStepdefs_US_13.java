@@ -4,11 +4,12 @@ import getlandestate.pages.ControlPanelPage;
 import getlandestate.pages.HomePage;
 import getlandestate.pages.LoginPage;
 import getlandestate.pages.MyTourRequestsPage;
-import getlandestate.utilities.ConfigReader;
-import getlandestate.utilities.Driver;
+import getlandestate.utilities.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+
+import javax.swing.*;
 
 public class CommonStepdefs_US_13 {
 
@@ -16,7 +17,6 @@ public class CommonStepdefs_US_13 {
     LoginPage loginPage;
     ControlPanelPage controlPanelPage;
     MyTourRequestsPage myTourRequestsPage;
-
     @Given("I navigate to {string} using a web browser")
     public void iNavigateToUsingAWebBrowser(String url) {
         Driver.getDriver().get(url);
@@ -38,11 +38,14 @@ public class CommonStepdefs_US_13 {
     @And("I click on the Login button at the top-right corner of the website")
     public void iClickOnTheLoginButtonAtTheTopRightCornerOfTheWebsite() {
         loginPage.loginButton.click();
+        WaitUtils.waitFor(2);
     }
 
     @And("I click on the Back to Site tab on the left side of the dashboard")
     public void iClickOnTheBackToSiteTabOnTheLeftSideOfTheDashboard() {
-        controlPanelPage.backToSite.click();
+        JSUtils.JSclickWithTimeout(controlPanelPage.backToSite);
+        //controlPanelPage.backToSite.click();
+        //WaitUtils.waitForClickablility(controlPanelPage.backToSite,5);
     }
 
     @And("I click on the User Profile button at the top-right corner of the website")

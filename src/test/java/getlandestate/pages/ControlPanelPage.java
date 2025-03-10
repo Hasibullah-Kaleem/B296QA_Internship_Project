@@ -9,7 +9,7 @@ public class ControlPanelPage {
     public ControlPanelPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy (xpath = "//span[text()='Back to Site']")
+    @FindBy (xpath = "//a[contains(text(),'Back to Site')]")
     public WebElement backToSite;
 
 }
