@@ -99,4 +99,24 @@ public class StepDefs_US_08 {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
+    @When("I leave the description box empty")
+    public void i_leave_the_description_box_empty() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("I should not be able to click on the Update button")
+    public void i_should_not_be_able_to_click_on_the_update_button() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("I should see a description error message in red under the Description box")
+    public void i_should_see_a_description_error_message_in_red_under_the_description_box() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+
 }
