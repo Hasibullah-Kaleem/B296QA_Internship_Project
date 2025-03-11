@@ -22,7 +22,9 @@ public class PropertyPage {
     @FindBy(xpath = "//h4[@class='advert-location-title']") public WebElement location;
     @FindBy(xpath = "//div[@class='modal-content']//p[2]") public WebElement warningMsg;
     @FindBy(xpath = "//span[@class='register-link']") public WebElement createNow;
-
+    @FindBy(xpath = "//div[text()='TourRequest created successfully']") public WebElement successMsg;
+    @FindBy(xpath = "//div[text()='Tour date is required']") public WebElement dateRequired;
+    @FindBy(xpath = "//div[text()='Tour time is required']") public WebElement timeRequired;
 
 
 
