@@ -27,13 +27,14 @@ public class Stepdefs_US_13 {
 
     @And("I click on the Reject button for a pending tour request associated with an ad")
     public void iClickOnTheRejectButtonForAPendingTourRequestAssociatedWithAnAd() {
+        myTourRequestsPage = new MyTourRequestsPage();
         myTourRequestsPage.actionNoTick.click();
-        WaitUtils.waitFor(5);
+        WaitUtils.waitFor(2);
     }
 
     @And("I confirm the action by clicking Yes in the dialogue box")
     public void iConfirmTheActionByClickingYesInTheDialogueBox() {
-        myTourRequestsPage.sureNoTick.click();
+        myTourRequestsPage.sureYesTick.click();
         WaitUtils.waitFor(3);
     }
 

@@ -18,8 +18,6 @@ public class MyTourRequestsPage {
     @FindBy (xpath = "//button[@aria-label='Yes']")
     public WebElement sureYesTick;
     @FindBy (xpath = "//button[@aria-label='No']")
-    public WebElement sureNoTick;
-    @FindBy (xpath = "//button[@aria-label='No']")
     public WebElement requestAcceptedNotification;
     @FindBy (xpath = "//span[text()='APPROVED']")
     public WebElement approvedStatus;
