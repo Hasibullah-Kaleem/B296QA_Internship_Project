@@ -13,4 +13,6 @@ public class MyTourRequestsPage {
     public WebElement myResponesTab;
     @FindBy (xpath = "(//button[@type='button'])[13]")
     public WebElement actionYesTick;
+    @FindBy(xpath = "(//li[@class='nav-item'])[1]") public WebElement myTourRequests;
+    @FindBy(xpath = "(//span[@class='p-tag p-component'])[1]") public WebElement tourStatus;
 }
