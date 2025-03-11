@@ -15,5 +15,13 @@ public class HomePage {
     public WebElement userProfile;
     @FindBy(xpath = "//span[text()='My Tour Requests']")
     public WebElement myTourRequests;
+    @FindBy(xpath = "//*[@id='root']/div[1]/div//button[1]") public WebElement rentButton;
+    @FindBy(xpath = "//*[@id='root']/div[1]//button[2]") public WebElement saleButton;
+    @FindBy(xpath = "//div[@class='content-wrapper']//div[3]//button[1]") public WebElement houseButton;
+    @FindBy(xpath = "//button[@class='btn btn-primary']") public WebElement searchButton;
+
+
+    @FindBy(xpath = "//a[@class='nav-link active']")
+    public WebElement contactOption;
 
 }

@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MyProfilePage {
+public class ManagerPage {
 
-    public MyProfilePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public ManagerPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(partialLinkText = "My Tour Requests") public WebElement tourRequests;
+    @FindBy(xpath = "//a[text()='Login']")
+    public WebElement loginOption;
+
 }
