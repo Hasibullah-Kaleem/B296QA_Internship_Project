@@ -31,6 +31,6 @@ public class ContactPage {
     @FindBy(xpath = "//div[normalize-space()='At least 2 characters']")
     public WebElement contactNameWarningMessage;
 
-    @FindBy(xpath = "//div[normalize-space()='Invalid email']")
-    public WebElement contactEmailWarningMessage;
+    @FindBy(xpath = "//div[normalize-space()='At least 2 characters']")
+    public WebElement contactNameWarningMessage;
 }
