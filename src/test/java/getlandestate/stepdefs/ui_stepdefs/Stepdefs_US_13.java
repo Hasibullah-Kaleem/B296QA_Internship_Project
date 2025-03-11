@@ -22,13 +22,13 @@ public class Stepdefs_US_13 {
 
     @Then("I should see the status of the tour request updated to Approved")
     public void iShouldSeeTheStatusOfTheTourRequestUpdatedToApproved() {
-        Assert.assertEquals(myTourRequestsPage.approvedStatus.getText(), "APPROVED");
+        Assert.assertEquals("APPROVED", myTourRequestsPage.approvedStatus.getText());
     }
 
     @And("I click on the Reject button for a pending tour request associated with an ad")
     public void iClickOnTheRejectButtonForAPendingTourRequestAssociatedWithAnAd() {
         myTourRequestsPage.actionNoTick.click();
-        WaitUtils.waitFor(3);
+        WaitUtils.waitFor(5);
     }
 
     @And("I confirm the action by clicking Yes in the dialogue box")
@@ -39,7 +39,7 @@ public class Stepdefs_US_13 {
 
     @Then("I should see the status of the tour request updated to Declined")
     public void iShouldSeeTheStatusOfTheTourRequestUpdatedToDeclined() {
-        Assert.assertEquals(myTourRequestsPage.declinedStatus.getText(), "DECLINED");
+        Assert.assertEquals("DECLINED", myTourRequestsPage.declinedStatus.getText());
         WaitUtils.waitFor(3);
     }
 }

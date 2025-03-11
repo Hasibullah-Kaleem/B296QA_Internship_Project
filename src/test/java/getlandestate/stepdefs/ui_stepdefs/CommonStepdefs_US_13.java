@@ -64,7 +64,7 @@ public class CommonStepdefs_US_13 {
     public void iGoToTheMyResponsesSection() {
         myTourRequestsPage = new MyTourRequestsPage();
         myTourRequestsPage.myResponesTab.click();
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(10);
     }
 
 }

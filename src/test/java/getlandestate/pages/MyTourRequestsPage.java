@@ -13,7 +13,7 @@ public class MyTourRequestsPage {
     public WebElement myResponesTab;
     @FindBy (xpath = "//button[contains(@class, 'approve-button')]")
     public WebElement actionYesTick;
-    @FindBy (xpath = "//button[contains(@class, 'decline-button')]")
+    @FindBy (xpath = "//button[@class='btn-link decline-button btn btn-primary']")
     public WebElement actionNoTick;
     @FindBy (xpath = "//button[@aria-label='Yes']")
     public WebElement sureYesTick;
