@@ -14,4 +14,6 @@ public class ManagerPage {
     @FindBy(xpath = "//a[text()='Login']")
     public WebElement loginOption;
 
+    @FindBy(xpath = "//*[@id='root']/div[2]/div") public WebElement Message;
+
 }

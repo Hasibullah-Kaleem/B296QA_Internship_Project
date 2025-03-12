@@ -2,16 +2,16 @@
 Feature: Manager advertisement management
 
   Background: Manager Login and Navigation to My Adverts
-    Given I navigate to "http://64.227.123.49/" with a web browser
-    When I click on the Login button on the homepage
-    And I enter valid manager credentials using the username "boukmanager@gmail.com" and the password "12345678Bouk@"
-    And I click on the Back to Site tab on the left side of the dashboard to go back to the homepage
+    Given I open "http://64.227.123.49/" with a web browser
+    When I select the Login button on the homepage to login
+    And I give valid manager credentials with username "boukmanager@gmail.com" and password "12345678Bouk@"
+    And I navigate back to the homepage by clicking the Back to Site tab on the left side of the dashboard
 
 
 
   @TC_01_US18
   Scenario: TC_01 - Verify Manager Can request to see an ad on the page
-    Given I click on the proprerties tab on the homepage to see properties available
+    Given I click on the properties tab on the homepage to see properties available
     And I choose a property to view
     And I choose a Tour date and time
     And I click on the submit a tour request button

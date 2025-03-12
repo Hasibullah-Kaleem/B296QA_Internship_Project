@@ -16,7 +16,10 @@ public class LoginPage {
     @FindBy (xpath = "//input[@name='password']")
     public WebElement passwordInput;
 
-    @FindBy (xpath = "//div[@class='recaptcha-wrapper']")
+    @FindBy (xpath = "//button[@type='submit']\n")
     public WebElement loginButton;
+
+    @FindBy (xpath = "//button[@type='submit']\n")
+    public WebElement login;
 
 }
