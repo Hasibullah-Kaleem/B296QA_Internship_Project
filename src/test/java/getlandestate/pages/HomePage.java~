@@ -23,6 +23,7 @@ public class HomePage {
 
     @FindBy(xpath = "//a[@class='nav-link active']")
     public WebElement contactOption;
+
     @FindBy(className = "user-pic")
     public WebElement userPicture;
 
