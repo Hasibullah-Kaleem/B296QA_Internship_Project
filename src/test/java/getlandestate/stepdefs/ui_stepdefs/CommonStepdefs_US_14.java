@@ -54,6 +54,7 @@ public class CommonStepdefs_US_14 {
     public void userSelectsTheFirstHouseDisplayedOnThePageAndClicksOnIt() {
         propertiesPage = new PropertiesPage();
         propertiesPage.property.click();
+        WaitUtils.waitFor(2);
     }
 
 }
