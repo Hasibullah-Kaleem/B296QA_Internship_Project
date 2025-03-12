@@ -23,11 +23,6 @@ public class CommonStepdefs_US_13 {
         Driver.getDriver().get(url);
     }
 
-    @When("I click on the Login button on the homepage")
-    public void iClickOnTheLoginButtonOnTheHomepage() {
-        homePage = new HomePage();
-        homePage.loginOption.click();
-    }
 
     @And("I enter valid manager credentials with username {string} and password {string}")
     public void iEnterValidManagerCredentialsWithUsernameAndPassword(String email, String password) {
