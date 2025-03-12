@@ -19,4 +19,6 @@ public class LoginPage {
     @FindBy (xpath = "//div[@class='recaptcha-wrapper']")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//div[@class='form-submit-button']//button[1]") public WebElement login;
+
 }
