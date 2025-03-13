@@ -1,3 +1,4 @@
+
 @us_17
 Feature: Manager report generation
 
@@ -31,3 +32,4 @@ Feature: Manager report generation
     Given I set the parameters for the report generation based on on the start date, end date,and status information
     When I click on the Generate Tour request Report button
     Then I should see the report generated successfully
+
