@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 @us_18
 Feature: Manager advertisement management
 
@@ -28,4 +27,4 @@ Feature: Manager advertisement management
     And I choose a Tour date and time
     And I click on the submit a tour request button
     Then I should see a message that the tour request has been submitted successfully
->>>>>>> origin/Boukadida
+
