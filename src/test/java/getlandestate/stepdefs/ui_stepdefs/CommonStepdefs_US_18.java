@@ -8,11 +8,9 @@ import io.cucumber.java.en.When;
 
 public class CommonStepdefs_US_18 {
 
-    HomePage homePage;
-    LoginPage loginPage;
-    ControlPanelPage controlPanelPage;
-    MyTourRequestsPage myTourRequestsPage;
 
+<<<<<<< HEAD
+=======
     @Given("I open {string} in a web browser")
     public void iOpenInAWebBrowser(String url) {
         Driver.getDriver().get(url);
@@ -35,6 +33,7 @@ public class CommonStepdefs_US_18 {
     public void iNavigateBackToTheHomepageByClickingTheBackToSiteTabOnTheLeftSideOfTheDashboard() {
         controlPanelPage.backToSite.click();
     }
+>>>>>>> origin/Boukadida
 }
 
 

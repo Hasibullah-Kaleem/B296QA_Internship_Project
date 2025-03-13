@@ -1,6 +1,14 @@
 package getlandestate.stepdefs.ui_stepdefs;
+<<<<<<< HEAD
+
+import getlandestate.pages.ControlPanelPage;
+import getlandestate.pages.HomePage;
+import getlandestate.pages.LoginPage;
+import getlandestate.pages.MyTourRequestsPage;
+=======
 /*
 import getlandestate.pages.*;
+>>>>>>> origin/Boukadida
 import getlandestate.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,6 +17,10 @@ import io.cucumber.java.en.When;
 public class CommonStepdefs_US_17 {
 
 
+<<<<<<< HEAD
+}
+
+=======
     HomePage homePage;
     LoginPage loginPage;
     ControlPanelPage controlPanelPage;
@@ -76,3 +88,4 @@ public class CommonStepdefs_US_17 {
     }
 }
 */
+>>>>>>> origin/Boukadida

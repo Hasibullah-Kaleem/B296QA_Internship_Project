@@ -44,7 +44,7 @@ public class US_10_StepDefs {
     }
     @When("customer clicks of login button")
     public void customer_clicks_of_login_button() {
-        loginPage.loginButton.click();
+        loginPage.login.click();
         WaitUtils.waitFor(3);
     }
     @When("customer clicks on rent button")
