@@ -16,9 +16,10 @@ public class LoginPage {
     @FindBy (xpath = "//input[@name='password']")
     public WebElement passwordInput;
 
-    @FindBy (xpath = "//div[@class='recaptcha-wrapper']")
+    @FindBy (xpath = "//button[@type='submit']\n")
     public WebElement loginButton;
 
+<<<<<<< HEAD
     @FindBy(xpath = "//div[@class='form-submit-button']//button[1]") public WebElement login;
 
     @FindBy(xpath = "//div[contains(text(),'Invalid email')]")
@@ -29,5 +30,9 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[contains(text(),'Password is required')]")
     public WebElement requiredPasswordMessage;
+=======
+    @FindBy (xpath = "//button[@type='submit']\n")
+    public WebElement login;
+>>>>>>> origin/Boukadida
 
 }
