@@ -70,4 +70,30 @@ public class JSUtils {
         System.out.println(value);
         return value;
     }
+
+    /**
+     * Handles JavaScript alerts.
+     * @return The text of the alert.
+     */
+    public static String JSgetAlertTextAndAccept() {
+        JavascriptExecutor js = (JavascriptExecutor) getlandestate.utilities.Driver.getDriver();
+
+        try {
+            // Switch to alert
+            org.openqa.selenium.Alert alert = getlandestate.utilities.Driver.getDriver().switchTo().alert();
+
+            // Get alert text
+            String alertText = alert.getText();
+            System.out.println("Alert Text: " + alertText);
+
+            // Accept (close) the alert
+            alert.accept();
+
+            return alertText;
+        } catch (Exception e) {
+            System.out.println("No alert found.");
+            return null;
+        }
+    }
+
 }
