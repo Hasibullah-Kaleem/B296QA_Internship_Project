@@ -23,7 +23,7 @@ public class ReportsPage {
     @FindBy(xpath = "(//input[@name='startDate'])[1]")
     public WebElement startDate1;
 
-    @FindBy(xpath = "(//input[@name='endDate'])[2]")
+    @FindBy(xpath = "(//input[@name='endDate'])[1]")
     public WebElement endDate1;
 
     @FindBy(xpath = "(//select[@class='form-select'])[1]")
@@ -44,7 +44,8 @@ public class ReportsPage {
     @FindBy(xpath = "(//select[@id='status']/option[@value='2'])[1]")
     public WebElement selectStatusRejected1;
 
-
+    @FindBy(xpath = "//*[@id='root']/div[2]/div")
+    public WebElement reportsMessage;
     //Reports page second section Most popular properties
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[2]")
     public WebElement reportButton2MostPopularProperties;
