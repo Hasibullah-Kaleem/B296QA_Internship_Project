@@ -12,5 +12,4 @@ public class RegisterPage {
     }
 
     @FindBy(xpath = "//div[@class='form-submit-button']") public WebElement registrationButton;
-
 }

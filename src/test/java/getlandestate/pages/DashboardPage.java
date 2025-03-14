@@ -14,4 +14,8 @@ public class DashboardPage {
     @FindBy(xpath = "//span[normalize-space()='ContactMessages']")
     public WebElement contactMessagesSection;
 
+    @FindBy(xpath = "//a[@title='Logout']")
+    public WebElement logoutButton;
+
+
 }
