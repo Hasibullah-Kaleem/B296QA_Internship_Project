@@ -21,4 +21,9 @@ public class PropertiesPage {
     @FindBy(xpath = "//select[@id='dist']") public WebElement selectDist;
     @FindBy(xpath = "//*[@id='root']/div[1]/div/div[3]/div/div[1]/div/div/form/div/div[8]/div/button") public WebElement search;
     @FindBy(xpath = "(//div[@class='property-card card'])[3]") public WebElement saleProperty;
+
+    @FindBy (xpath = "(//a[@class=' text-decoration-none'])[1]")
+    public WebElement firstProperty;
+
+
 }
