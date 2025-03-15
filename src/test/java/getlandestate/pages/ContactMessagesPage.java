@@ -16,10 +16,10 @@ public class ContactMessagesPage {
     @FindBy(xpath = "//button[@class='accordion-button']")
     public WebElement expandedContactMessage;
 
-    @FindBy(xpath = "//div[@class='accordion-collapse collapse show']//button[@title='Mark as read']//*[name()='svg']")
+    @FindBy(xpath = "//button[@title='Mark as read']")
     public WebElement markAsReadButton;
 
-    @FindBy(xpath = "//button[@title='Delete message']//*[name()='svg']")
+    @FindBy(xpath = "//button[@title='Delete message']")
     public WebElement deleteButton;
 
     @FindBy(xpath = "//input[@placeholder='Type Something']")
@@ -42,5 +42,8 @@ public class ContactMessagesPage {
 
     @FindBy(xpath = "//button[@title='Apply Filters']//*[name()='svg']")
     public WebElement applyFiltersButton;
+
+    @FindBy(xpath = "//button[@title='Mark as unread']")
+    public WebElement markAsUnreadButton;
 
 }
