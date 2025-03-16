@@ -19,12 +19,10 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class Stepdefs_US_14 {
-    PropertyPage propertyPage;
-    Faker faker;
+    PropertyPage propertyPage = new PropertyPage();
+    Faker faker = new Faker();
     @And("User schedules a tour by selecting a Tour Date and Tour Time from the options on the right side of the page")
     public void userSchedulesATourBySelectingATourDateAndTourTimeFromTheOptionsOnTheRightSideOfThePage() {
-        propertyPage = new PropertyPage();
-        faker = new Faker();
         Date futureDate = faker.date().future(365, TimeUnit.DAYS);
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
         String formattedDate = dateFormat.format(futureDate);
@@ -47,7 +45,6 @@ public class Stepdefs_US_14 {
 
     @And("User clicks on the Submit a Tour Request button without selecting a Tour Date or Tour Time")
     public void userClicksOnTheSubmitATourRequestButtonWithoutSelectingATourDateOrTourTime() {
-        propertyPage = new PropertyPage();
         propertyPage.submitButton.click();
         WaitUtils.waitFor(2);
     }
