@@ -1,4 +1,3 @@
-
 @us_18
 Feature: Manager advertisement management
 
@@ -26,4 +25,3 @@ Feature: Manager advertisement management
     And I click on MY RESPONSES tab to see the tour requests from other users
     And I choose to accept or reject a tour request
     Then I should see a message that the tour request has been accepted or rejected successfully
-

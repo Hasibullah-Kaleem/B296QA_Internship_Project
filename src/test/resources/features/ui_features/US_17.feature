@@ -1,3 +1,4 @@
+
 @us_17
 Feature: Manager report generation
 

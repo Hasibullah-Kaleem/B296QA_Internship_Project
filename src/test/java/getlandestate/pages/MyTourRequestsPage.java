@@ -11,10 +11,23 @@ public class MyTourRequestsPage {
     }
     @FindBy (xpath = "//p[text()='MY RESPONSES']")
     public WebElement myResponesTab;
-    @FindBy (xpath = "(//button[@type='button'])[13]")
+    @FindBy (xpath = "//button[contains(@class, 'approve-button')]")
     public WebElement actionYesTick;
+
+    @FindBy (xpath = "//button[@class='btn-link decline-button btn btn-primary']")
+    public WebElement actionNoTick;
+    @FindBy (xpath = "//button[@aria-label='Yes']")
+    public WebElement sureYesTick;
+    @FindBy (xpath = "//button[@aria-label='No']")
+    public WebElement requestAcceptedNotification;
+    @FindBy (xpath = "//span[text()='APPROVED']")
+    public WebElement approvedStatus;
+    @FindBy (xpath = "//span[text()='DECLINED']")
+    public WebElement declinedStatus;
+
     @FindBy(xpath = "(//li[@class='nav-item'])[1]") public WebElement myTourRequests;
     @FindBy(xpath = "(//span[@class='p-tag p-component'])[1]") public WebElement tourStatus;
+
 
     @FindBy(xpath = "//button[contains(@class, 'approve-button')]\n") public WebElement acceptButton;
     @FindBy(xpath = "//button[contains(@class, 'p-confirm-popup-accept')]\n") public WebElement yesButtonAccept;
@@ -28,4 +41,5 @@ public class MyTourRequestsPage {
     @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div") public WebElement tourRequestApprovalMessage2;
     @FindBy(xpath = "//*[@id=\"react-aria8798142331-:r3:-tabpane-response\"]/div/div/div/div[1]/table/tbody/tr[1]/td[6]/div/span[2]/button[2]")
     public WebElement acceptButton2;
+
 }
