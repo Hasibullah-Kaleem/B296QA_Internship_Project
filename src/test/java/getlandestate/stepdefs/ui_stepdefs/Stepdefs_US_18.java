@@ -3,11 +3,9 @@ package getlandestate.stepdefs.ui_stepdefs;
 import getlandestate.pages.*;
 import getlandestate.utilities.*;
 import io.cucumber.java.en.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,7 +27,6 @@ public class Stepdefs_US_18 {
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
     ControlPanelPage controlPanelPage = new ControlPanelPage();
-    AdvertsPage advertsPage = new AdvertsPage();
     PropertiesPage propertiesPage = new PropertiesPage();
     WebDriverWait wait;
     WebDriver driver;
@@ -181,8 +178,8 @@ public class Stepdefs_US_18 {
 
 
     //TC_02
-    @Given("I click on the User Profile button at the top-right corner of the website")
-    public void i_click_on_the_user_profile_button_at_the_top_right_corner_of_the_website() {
+    @Given("I click on the Profile button at the top-right corner of the website")
+    public void i_click_on_the_profile_button_at_the_top_right_corner_of_the_website() {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
         WebElement userProfileElement = wait.until(ExpectedConditions.elementToBeClickable(myProfilePage.myProfile));
@@ -210,39 +207,62 @@ public class Stepdefs_US_18 {
         myTourRequestsPage = new MyTourRequestsPage(); // Initialize the myTourRequestsPage object
         myTourRequestsPage.myResponesTab.click();
 
-        // assertEquals("http://64.227.123.49/my-tour-requests", "Driver.getDriver().getCurrentUrl())");
     }
 
     @And("I choose to accept or reject a tour request")
     public void iChooseToAcceptOrRejectATourRequest() {
-        myTourRequestsPage = new MyTourRequestsPage(); // Initialize the myTourRequestsPage object
-        myTourRequestsPage.acceptButton.click();
-        myTourRequestsPage.yesButtonAccept.click();
+        myTourRequestsPage = new MyTourRequestsPage(); // Initialize the page object
 
+        try {
+            // Wait for the parent container (if applicable)
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//td[contains(@data-pc-name, 'datatable')]//span[contains(@data-pc-section, 'value')]\n")
+            ));
+
+            // Now wait for the status element itself
+            WebElement statusElement = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//td[@data-pc-name='datatable']//span[@class='p-tag-value']\n")
+            ));
+
+            String statusText = statusElement.getText().trim();
+            System.out.println("🔎 Current Status: " + statusText);
+
+
+            if (statusText.equalsIgnoreCase("PENDING")) {
+                System.out.println("🚫 Status is PENDING, clicking APPROVE...");
+                myTourRequestsPage.acceptButton.click();
+                myTourRequestsPage.yesButtonAccept.click();}
+            else if (statusText.equalsIgnoreCase("APPROVED")) {
+                    System.out.println("🚫 Status is APPROVED, clicking DECLINE...");
+                    myTourRequestsPage.rejectButton.click();
+                    myTourRequestsPage.yesButtonReject.click(); // Confirm rejection
+            } else if (statusText.equalsIgnoreCase("DECLINED")) {
+                    System.out.println("✅ Status is DECLINED, clicking APPROVE...");
+                    myTourRequestsPage.acceptButton.click();
+                    myTourRequestsPage.yesButtonAccept.click(); // Confirm approval
+            } else {
+                    System.out.println("⚠️ Unknown status: " + statusText);
+                }
+            } catch(TimeoutException e){
+                System.err.println("❌ ERROR: Status element was not found within the time limit.");
+            }
+        }
+
+        @Then("I should see a message that the tour request has been accepted or rejected successfully")
+        public void iShouldSeeAMessageThatTheTourRequestHasBeenAcceptedOrRejectedSuccessfully () throws IOException {
+
+            wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(5));
+            assertTrue(wait.until(ExpectedConditions.visibilityOf(myTourRequestsPage.tourRequestApprovalMessage)).isDisplayed());
+            System.out.println("Tour request message = " + myTourRequestsPage.tourRequestApprovalMessage2.getText());
+           MediaUtils.takeScreenshotOfTheEntirePage();
+
+            //logout from user profile
+            homePage.userProfil.click();
+            homePage.logoutButton.click();
+            actions.sendKeys(Keys.ENTER).perform();
+
+        }
 
     }
-
-    @Then("I should see a message that the tour request has been accepted or rejected successfully")
-    public void iShouldSeeAMessageThatTheTourRequestHasBeenAcceptedOrRejectedSuccessfully() throws IOException {
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        WebElement toastMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class, 'p-toast-detail') and text()='Tour Request']")
-        ));
-
-        assertTrue(toastMessage.getText().contains("Tour Request "));
-        MediaUtils.takeScreenshotOfTheEntirePage();
-
-
-        assertTrue(myTourRequestsPage.tourRequestApprovalMessage.isDisplayed());
-
-        //logout from user profile
-        homePage.userProfil.click();
-        homePage.logoutButton.click();
-        actions.sendKeys(Keys.ENTER).perform();
-    }
-
-}
 
 

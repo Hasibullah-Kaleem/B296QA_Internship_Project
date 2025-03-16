@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 @us_18
 Feature: Manager advertisement management
 
@@ -22,18 +21,9 @@ Feature: Manager advertisement management
 
   @TC_02_US18
   Scenario: TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements
-    Given I click on the User Profile button at the top-right corner of the website
-<<<<<<< HEAD
+    Given I click on the Profile button at the top-right corner of the website
     And I navigate to the My tour requests page
     And I click on MY RESPONSES tab to see the tour requests from other users
     And I choose to accept or reject a tour request
     Then I should see a message that the tour request has been accepted or rejected successfully
 
-=======
-    And I navigate to the My Adverts tab from the dropdown menu
-    And I choose a property to view from my own adverts
-    And I choose a Tour date and time
-    And I click on the submit a tour request button
-    Then I should see a message that the tour request has been submitted successfully
->>>>>>> origin/Boukadida
->>>>>>> 9d414e69f372712a246e73526d18b45e6ee35fb2
