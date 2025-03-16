@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         plugin = {
 
-                "pretty",
+                "pretty", //generates reports in the console....
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/ui_features",
         glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
         dryRun = false,
-        tags = "@us_13"
+        tags = "@us_21"
 
 )
 public class Runner {
