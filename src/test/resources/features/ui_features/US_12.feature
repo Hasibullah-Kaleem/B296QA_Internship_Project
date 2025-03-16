@@ -27,7 +27,7 @@ Feature: Customer_search_Functionality
     Then customer verifies the result page contains properties
     And customer closes the application
 
-  @tc12_03
+  @tc_03
   Scenario: TC_03_Customer_able_to_see_information_of_property_and_details
     Then customer clicks on rent button
     And customer clicks on house category
@@ -45,7 +45,7 @@ Feature: Customer_search_Functionality
     And customer clicks on the eye icon on the right side of contact number
     Then verify customer is not able to see advertiser contact information and warning message appear
     And customer closes the application
-  @tc12_05
+  @tc_05
   Scenario: TC_05_Customer_must_not_be_able_to_request_tour_request
     Then customer clicks on rent button
     And customer clicks on house category
