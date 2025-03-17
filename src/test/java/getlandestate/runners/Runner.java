@@ -22,7 +22,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/ui_features",
         glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
         dryRun = false,
-        tags = "@us_21"
+
+        tags = "@us_18"
+
 
 )
 public class Runner {

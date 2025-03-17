@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class ActionsUtils {
-    private static Actions actions = new Actions(Driver.getDriver());
+    public static Actions actions = new Actions(Driver.getDriver());
 
     /**
      * Performs a right-click (context click) on the specified element.
