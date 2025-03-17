@@ -9,7 +9,8 @@ public class HomePage {
     public HomePage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//a[text()='Login']")  //*[@id="offcanvas-menu"]/div[2]/div[2]/div[1]/a[1]
+    @FindBy(xpath = "//a[text()='Login']")
+    //*[@id="offcanvas-menu"]/div[2]/div[2]/div[1]/a[1]
     public WebElement loginOption;
 
 
@@ -27,5 +28,8 @@ public class HomePage {
     public WebElement propertiesOption;
     @FindBy(className = "user-pic")
     public WebElement userPicture;
+
+    @FindBy(xpath = "(//a[text()='Properties'])[1]")
+    public WebElement propertiesButton;
 
 }

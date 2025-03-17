@@ -14,8 +14,17 @@ public class DashboardPage {
     @FindBy(xpath = "//span[normalize-space()='ContactMessages']")
     public WebElement contactMessagesSection;
 
+    @FindBy(xpath = "//a[@title='Reports']")
+    public WebElement reportSectionButton;
+
     @FindBy(xpath = "//a[@title='Logout']")
     public WebElement logoutButton;
 
+    @FindBy(xpath = "//div[@class='error-message']")
+    public WebElement errorMessage;
+
 
 }
+
+
+

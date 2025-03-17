@@ -16,9 +16,11 @@ public class LoginPage {
     @FindBy (xpath = "//input[@name='password']")
     public WebElement passwordInput;
 
-    @FindBy (xpath = "//button[@type='submit']\n")
-    public WebElement loginButton;
+    @FindBy(css = "button.submit-button")
+    public WebElement loginBtn;
 
+    @FindBy(xpath = "//a[text()='Login']")  // Updated XPath
+    public WebElement loginButton;
 
     @FindBy(xpath = "//div[@class='form-submit-button']//button[1]")
     public WebElement login;
@@ -31,6 +33,10 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[contains(text(),'Password is required')]")
     public WebElement requiredPasswordMessage;
+
+
+    @FindBy (xpath = "//button[@type='submit']\n")
+    public WebElement loginOption;
 
  
 

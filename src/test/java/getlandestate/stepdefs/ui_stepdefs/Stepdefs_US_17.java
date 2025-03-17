@@ -24,7 +24,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Stepdefs_US_17 {
 
-    ReportsPage myReportsPage = new ReportsPage();
+   ReportsPage myReportsPage = new ReportsPage();
     ManagerPage myManagerPage = new ManagerPage();
     ControlPanelPage myControlPanelPage = new ControlPanelPage();
     DashboardPage myDashboardPage = new DashboardPage();
