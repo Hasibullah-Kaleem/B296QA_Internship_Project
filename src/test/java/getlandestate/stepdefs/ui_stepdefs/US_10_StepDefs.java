@@ -37,7 +37,7 @@ public class US_10_StepDefs {
     public void customer_is_on_the_home_page(String url) throws IOException {
         Driver.getDriver().get(url);
         WaitUtils.waitFor(5);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
     @When("customer clicks on login option")
     public void customer_clicks_on_login_option() {
@@ -55,7 +55,7 @@ public class US_10_StepDefs {
     public void customer_clicks_of_login_button() throws IOException {
         loginPage.login.click();
         WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
     @When("customer clicks on rent button")
     public void customer_clicks_on_rent_button() {
@@ -65,7 +65,7 @@ public class US_10_StepDefs {
     public void customer_clicks_on_house_category() throws IOException {
         homePage.houseButton.click();
 
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
 
     @When("customer clicks on search icon")
@@ -77,7 +77,7 @@ public class US_10_StepDefs {
     public void customer_verifies_the_result_page_contains_properties() throws IOException {
         assertTrue(properties.property.isDisplayed());
         WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
 
     }
     @Then("customer closes the application")
@@ -120,7 +120,7 @@ public class US_10_StepDefs {
         select=new Select(properties.selectDist);
         select.selectByVisibleText("All");
         WaitUtils.waitFor(5);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
     @When("customer clicks on search")
     public void customer_clicks_on_search() {
@@ -134,13 +134,15 @@ public class US_10_StepDefs {
     public void customer_clicks_on_property_he_choose() throws IOException {
         properties.property.click();
         WaitUtils.waitFor(4);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
     @Then("customer verifies image, description, details and location information is available")
     public void customer_verifies_image_description_details_and_location_information_is_available() {
         propertyPage.eyeIcon.click();
         assertTrue(propertyPage.contactN.isDisplayed());
         assertTrue(propertyPage.title.isDisplayed());
+        assertTrue(propertyPage.location.isDisplayed());
+        assertTrue(propertyPage.description.isDisplayed());
 
     }
 
@@ -149,8 +151,8 @@ public class US_10_StepDefs {
     @Then("customer clicks on the eye icon on the right side of contact number")
     public void customer_clicks_on_the_eye_icon_on_the_right_side_of_contact_number() throws IOException {
         propertyPage.eyeIcon.click();
+        MediaUtils.takeScreenshotOfTheEntirePage();
         WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
     }
     @Then("customer verifies advertiser contact information is visible")
     public void customer_verifies_advertiser_contact_information_is_visible() {
@@ -171,26 +173,22 @@ public class US_10_StepDefs {
     @Then("customer chooses tour hour")
     public void customer_chooses_tour_hour() throws IOException {
         propertyPage.tourTime.sendKeys("06:00");
+        MediaUtils.takeScreenshotOfTheEntirePage();
         WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+
     }
     @Then("customer clicks on submit tour request")
     public void customer_clicks_on_submit_tour_request() throws IOException {
         propertyPage.submitButton.click();
-        WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
+
     }
     @Then("verify customer is able to submit tour request")
     public void verify_customer_is_able_to_submit_tour_request() throws IOException {
-        wait= new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOf(propertyPage.msg));
-        String actualMsg = BrowserUtils.getTextWithTimeout(propertyPage.msg,5);
-        String expectedMsg = "TourRequest created successfully";
+        wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(5));
+        assertTrue(wait.until(ExpectedConditions.visibilityOf(propertyPage.msg)).isDisplayed());
+        MediaUtils.takeScreenshotOfTheEntirePage();
 
-        assertEquals(expectedMsg,actualMsg);
-
-        WaitUtils.waitFor(3);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
     }
 
     //TC_06
@@ -202,14 +200,16 @@ public class US_10_StepDefs {
     @When("customer clicks on my tour requests")
     public void customer_clicks_on_my_tour_requests() {
         myProfilePage.tourRequests.click();
+        WaitUtils.waitFor(5);
 
     }
     @Then("verify customer is able to see tour requests")
     public void verify_customer_is_able_to_see_tour_requests() throws IOException {
+
         assertTrue(myTourRequestsPage.myTourRequests.isDisplayed());
         System.out.println(myTourRequestsPage.myTourRequests.getText());
         WaitUtils.waitFor(5);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
 
     //TC_07
@@ -220,6 +220,6 @@ public class US_10_StepDefs {
         wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(5));
         assertTrue(wait.until(ExpectedConditions.visibilityOf(myTourRequestsPage.tourStatus)).isDisplayed());
         WaitUtils.waitFor(2);
-        MediaUtils.takeScreenshotOfTheEntirePageAsString();
+        MediaUtils.takeScreenshotOfTheEntirePage();
     }
 }

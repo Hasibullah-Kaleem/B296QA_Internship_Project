@@ -2,23 +2,15 @@ package getlandestate.stepdefs.ui_stepdefs;
 
 import getlandestate.pages.*;
 import getlandestate.utilities.Driver;
-import getlandestate.utilities.JSUtils;
 import getlandestate.utilities.MediaUtils;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.openqa.selenium.Alert;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.IOException;
 import java.time.Duration;
-
 import static getlandestate.utilities.WaitUtils.waitFor;
 import static org.junit.Assert.assertTrue;
 
@@ -55,6 +47,7 @@ public class Stepdefs_US_17 {
 
     @And("I click on the Reports button at the right side of the dashboard")
     public void iClickOnTheReportsButtonAtTheRightSideOfTheDashboard() {
+
         reportsPage.reportSectionButton.click();
     }
 
@@ -63,7 +56,7 @@ public class Stepdefs_US_17 {
     @Given("I set the parameters for the report generation based on the start date, end date, category, advert type, and status")
     public void iSetTheParametersForTheReportGenerationBasedOnTheStartDateEndDateCategoryAdvertTypeAndStatus() throws IOException {
         myReportsPage.startDate1.sendKeys("01/01/2025");
-        myReportsPage.endDate1.sendKeys("10/03/2025");
+        myReportsPage.endDate1.sendKeys("03/10/2025");
         myReportsPage.selectCategory.click();
         actions.sendKeys(Keys.ENTER).perform();
         myReportsPage.selectAdvertType.click();
