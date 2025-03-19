@@ -38,7 +38,7 @@ public class CommonStepdefs_US_13 {
 
     @And("I click on the Login button at the top-right corner of the website")
     public void iClickOnTheLoginButtonAtTheTopRightCornerOfTheWebsite(){
-        loginPage.loginBtn.click();
+        loginPage.loginButton.click();
         WaitUtils.waitFor(2);
     }
 

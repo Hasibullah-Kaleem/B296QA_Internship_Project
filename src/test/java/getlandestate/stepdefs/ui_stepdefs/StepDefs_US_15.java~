@@ -31,8 +31,8 @@ public class StepDefs_US_15 {
         System.out.println("Navigated to: " + url);
     }
 
-    @When("I click on the Login button on the Homepage")
-    public void i_click_on_the_login_button_on_the_Homepage() {
+    @When("I click on the Login button on the homepage")
+    public void i_click_on_the_login_button_on_the_homepage() {
         homePage.loginOption.click();
         System.out.println("Clicked on login button.");
     }
