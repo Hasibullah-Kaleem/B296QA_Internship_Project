@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 17, 2025 06:22:00 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 17, 2025 10:13:06 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 17, 2025 06:22:00 PM</h3>
+<h3>Mar 17, 2025 10:13:06 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 17, 2025 06:23:11 PM</h3>
+<h3>Mar 17, 2025 10:14:12 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='25%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='33%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='75%'><b>3</b> scenarios failed,
+<small data-tooltip='66%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'><b>28</b> steps passed</small></div>
+<div><small data-tooltip='57%'><b>12</b> steps passed</small></div>
 <div>
-<small data-tooltip='9%'><b>3</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='19%'><b>4</b> steps failed,
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Admin Report Management":70.255
+"US_02 Customer's login functionality":65.793
 };
 </script>
 <div class="row">
@@ -177,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@TC_03_US16</td>
+<td>@tc_03_customer_natalia_unsuccessful_login</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -185,23 +185,7 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@TC_01_US16</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@us_16</td>
-<td>1</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>25%</td>
-</tr>
-<tr>
-<td>@TC_02_US16</td>
+<td>@tc_01_customer_natalia_successful_login</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -209,12 +193,20 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TC_04_US16</td>
+<td>@tc_02_customer_natalia_unsuccessful_login</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
+</tr>
+<tr>
+<td>@us_02</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>33.333%</td>
 </tr>
 </tbody>
 </table></div>
@@ -245,15 +237,15 @@ warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 1,
-failChild: 3,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 28,
-failGrandChild: 3,
+passGrandChild: 12,
+failGrandChild: 4,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -275,7 +267,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@TC_03_US16</a><a class="dropdown-item" href="#">@TC_01_US16</a><a class="dropdown-item" href="#">@us_16</a><a class="dropdown-item" href="#">@TC_02_US16</a><a class="dropdown-item" href="#">@TC_04_US16</a>
+<a class="dropdown-item" href="#">@tc_03_customer_natalia_unsuccessful_login</a><a class="dropdown-item" href="#">@tc_01_customer_natalia_successful_login</a><a class="dropdown-item" href="#">@tc_02_customer_natalia_unsuccessful_login</a><a class="dropdown-item" href="#">@us_02</a>
 </ul>
 </li>
 </ul>
@@ -286,9 +278,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Admin Report Management</p>
+            <p class="name">US_02 Customer's login functionality</p>
             <p class="text-sm">
-              <span>6:22:01 PM</span> / <span>00:01:10:255</span>
+              <span>10:13:06 PM</span> / <span>00:01:05:793</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -296,10 +288,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Admin Report Management</h5>
-<span class='badge badge-success'>03.17.2025 6:22:01 PM</span>
-<span class='badge badge-danger'>03.17.2025 6:23:11 PM</span>
-<span class='badge badge-default'>00:01:10:255</span>
+<h5 class="test-status text-fail">US_02 Customer's login functionality</h5>
+<span class='badge badge-success'>03.17.2025 10:13:06 PM</span>
+<span class='badge badge-danger'>03.17.2025 10:14:12 PM</span>
+<span class='badge badge-default'>00:01:05:793</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -311,179 +303,43 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify Admin can generate an advertisement report</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_opens_in_a_browser(java.lang.String)">
-                <span>Given Admin opens "http://64.227.123.49/" in a browser</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_the_login_button_on_the_homepage()">
-                <span>When Admin clicks the login button on the homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_enters_valid_credentials_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>And Admin enters valid credentials with username "engineerhulya@hotmail.com" and password "Hulyatas2025?"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_navigates_to_the_reports_section_from_the_dashboard()">
-                <span>And Admin navigates to the Reports section from the dashboard</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_configures_the_report_filters_with_start_date_end_date_category_advert_type_and_status()">
-                <span>Given Admin configures the report filters with start date, end date, category, advert type, and status</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_on_the_generate_advertisement_report_button()">
-                <span>When Admin clicks on the Generate Advertisement Report button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated()">
-                <span>Then The report should be successfully generated</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated(StepDefs_US_16.java:115)
-	at ✽.The report should be successfully generated(file:///C:/Users/tasci/IdeaProjects/B296QA_Internship_Project/src/test/resources/features/ui_features/US_16.feature:15)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>failed_screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Verify Admin can generate a report for most popular adverts</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Customer_Natalia_must_be_able_to_login_with_valid_credentials</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_opens_in_a_browser(java.lang.String)">
-                <span>Given Admin opens "http://64.227.123.49/" in a browser</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaIsOnTheHomePage(java.lang.String)">
+                <span>Given Customer Natalia is on the "baseUrl" home page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_the_login_button_on_the_homepage()">
-                <span>When Admin clicks the login button on the homepage</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOnLoginOption()">
+                <span>When customer Natalia clicks on Login option</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_enters_valid_credentials_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>And Admin enters valid credentials with username "engineerhulya@hotmail.com" and password "Hulyatas2025?"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaEntersValidEmailIntoEmailInputField()">
+                <span>And customer Natalia enters valid email into email input field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_navigates_to_the_reports_section_from_the_dashboard()">
-                <span>And Admin navigates to the Reports section from the dashboard</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaEntersValidPasswordIntoPasswordInputField()">
+                <span>And customer Natalia enters valid password into password input field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_sets_report_parameters_amount()">
-                <span>Given Admin sets the report parameters based on the amount filter</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOfLOGINButton()">
+                <span>And customer Natalia clicks of LOGIN button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_triggers_report_generation_for_popular_adverts()">
-                <span>When Admin triggers the report generation for popular adverts</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaShouldBeAbleToLoginSuccessfully()">
+                <span>Then customer Natalia should be able to login successfully</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated()">
-                <span>Then The report should be successfully generated</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>Verify Admin can generate a report by user role</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_opens_in_a_browser(java.lang.String)">
-                <span>Given Admin opens "http://64.227.123.49/" in a browser</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_the_login_button_on_the_homepage()">
-                <span>When Admin clicks the login button on the homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_enters_valid_credentials_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>And Admin enters valid credentials with username "engineerhulya@hotmail.com" and password "Hulyatas2025?"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_navigates_to_the_reports_section_from_the_dashboard()">
-                <span>And Admin navigates to the Reports section from the dashboard</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_sets_report_parameters_user_roles()">
-                <span>Given Admin sets the report parameters for user roles</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_generate_role_based_report()">
-                <span>When Admin clicks on the Generate Role-Based Report button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated()">
-                <span>Then The report should be successfully generated</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated(StepDefs_US_16.java:115)
-	at ✽.The report should be successfully generated(file:///C:/Users/tasci/IdeaProjects/B296QA_Internship_Project/src/test/resources/features/ui_features/US_16.feature:27)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>failed_screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
-    
-    </div></div>
-</div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClosesTheApplication()">
+                <span>And customer Natalia closes the application</span>
       <div>
       </div>
               </div>
@@ -493,71 +349,188 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>Verify Admin can generate a tour request report</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_opens_in_a_browser(java.lang.String)">
-                <span>Given Admin opens "http://64.227.123.49/" in a browser</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaIsOnTheHomePage(java.lang.String)">
+                <span>Given Customer Natalia is on the "baseUrl" home page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_the_login_button_on_the_homepage()">
-                <span>When Admin clicks the login button on the homepage</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOnLoginOption()">
+                <span>When customer Natalia clicks on Login option</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_enters_valid_credentials_with_username_and_password(java.lang.String,java.lang.String)">
-                <span>And Admin enters valid credentials with username "engineerhulya@hotmail.com" and password "Hulyatas2025?"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaEntersInvalidEmailIntoEmailInputField()">
+                <span>And customer Natalia enters invalid email into email input field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_navigates_to_the_reports_section_from_the_dashboard()">
-                <span>And Admin navigates to the Reports section from the dashboard</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaEntersValidPasswordIntoPasswordInputField()">
+                <span>And customer Natalia enters valid password into password input field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_configures_report_filters_tour_request()">
-                <span>Given Admin configures the report filters using start date, end date, and status</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOfLOGINButton()">
+                <span>And customer Natalia clicks of LOGIN button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.admin_clicks_generate_tour_request_report()">
-                <span>When Admin clicks on the Generate Tour Request Report button</span>
+              <div class="step fail-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaShouldNotBeAbleToLoginSuccessfullyWithInvalidEmailFormat()">
+                <span>Then customer Natalia should not be able to login successfully with invalid email format</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated()">
-                <span>Then The report should be successfully generated</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.the_report_should_be_successfully_generated(StepDefs_US_16.java:115)
-	at ✽.The report should be successfully generated(file:///C:/Users/tasci/IdeaProjects/B296QA_Internship_Project/src/test/resources/features/ui_features/US_16.feature:33)
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26f438c83d36b46395f9196bf85893b4, findElement {using=xpath, value=//div[contains(text(),'Invalid email')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tasci\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54310/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26f438c83d36b46395f9196bf85893b4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaShouldNotBeAbleToLoginSuccessfullyWithInvalidEmailFormat(Stepdefs_US_02.java:71)
+	at ✽.customer Natalia should not be able to login successfully with invalid email format(file:///C:/Users/tasci/IdeaProjects/B296QA_Internship_Project/src/test/resources/features/ui_features/US_02.feature:21)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.StepDefs_US_16.report_should_be_exported_successfully()">
-                <span>Then The report should be exported successfully</span>
+              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClosesTheApplication()">
+                <span>And customer Natalia closes the application</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
+              <div class="step fail-bg" title="AFTER">
                 <span>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>failed_screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded3.png' src="../embedded3.png">
-    
-    </div></div>
-</div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26f438c83d36b46395f9196bf85893b4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tasci\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54310/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26f438c83d36b46395f9196bf85893b4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at getlandestate.hooks.Hooks.tearDown(Hooks.java:46)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>Customer_Natalia_must_not_be_able_to_login_without_entering_credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaIsOnTheHomePage(java.lang.String)">
+                <span>Given Customer Natalia is on the "baseUrl" home page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26f438c83d36b46395f9196bf85893b4, get {url=http://64.227.123.49/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tasci\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54310/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26f438c83d36b46395f9196bf85893b4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaIsOnTheHomePage(Stepdefs_US_02.java:25)
+	at ✽.Customer Natalia is on the "baseUrl" home page(file:///C:/Users/tasci/IdeaProjects/B296QA_Internship_Project/src/test/resources/features/ui_features/US_02.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOnLoginOption()">
+                <span>When customer Natalia clicks on Login option</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClicksOfLOGINButton()">
+                <span>And customer Natalia clicks of LOGIN button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaShouldNotBeAbleToLoginSuccessfullyWithoutEnteringCredentials()">
+                <span>Then customer Natalia should not be able to login successfully without entering credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_02.customerNataliaClosesTheApplication()">
+                <span>And customer Natalia closes the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26f438c83d36b46395f9196bf85893b4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tasci\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54310/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26f438c83d36b46395f9196bf85893b4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at getlandestate.hooks.Hooks.tearDown(Hooks.java:46)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -579,7 +552,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -588,12 +561,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@TC_03_US16</p>
+<p class="name">@tc_03_customer_natalia_unsuccessful_login</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TC_03_US16</h4>
+<h4>@tc_03_customer_natalia_unsuccessful_login</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -607,115 +580,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:46 PM</td>
+<td>22:14:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='22'>Verify Admin can generate a report by user role</a>
+<a href="#" class="linked" test-id='1' id='22'>Customer_Natalia_must_not_be_able_to_login_without_entering_credentials</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a report by user role</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@TC_01_US16</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TC_01_US16</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Verify Admin can generate an advertisement report</a>
-<div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate an advertisement report</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>3</span>
-</span>
-<p class="name">@us_16</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@us_16</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Verify Admin can generate an advertisement report</a>
-<div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate an advertisement report</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:22:23 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Verify Admin can generate a report for most popular adverts</a>
-<div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a report for most popular adverts</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:46 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='22'>Verify Admin can generate a report by user role</a>
-<div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a report by user role</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:52 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>Verify Admin can generate a tour request report</a>
-<div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a tour request report</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_without_entering_credentials</span>
 </div>
 </td>
 </tr>
@@ -728,12 +597,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TC_02_US16</p>
+<p class="name">@tc_01_customer_natalia_successful_login</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TC_02_US16</h4>
+<h4>@tc_01_customer_natalia_successful_login</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -747,11 +616,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:22:23 PM</td>
+<td>22:13:06 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>Verify Admin can generate a report for most popular adverts</a>
+<a href="#" class="linked" test-id='1' id='2'>Customer_Natalia_must_be_able_to_login_with_valid_credentials</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a report for most popular adverts</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_be_able_to_login_with_valid_credentials</span>
 </div>
 </td>
 </tr>
@@ -764,12 +633,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@TC_04_US16</p>
+<p class="name">@tc_02_customer_natalia_unsuccessful_login</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TC_04_US16</h4>
+<h4>@tc_02_customer_natalia_unsuccessful_login</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -783,11 +652,69 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:52 PM</td>
+<td>22:13:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='32'>Verify Admin can generate a tour request report</a>
+<a href="#" class="linked" test-id='1' id='12'>Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a tour request report</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@us_02</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@us_02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:13:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Customer_Natalia_must_be_able_to_login_with_valid_credentials</a>
+<div class="">
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_be_able_to_login_with_valid_credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:13:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format</a>
+<div class="">
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:14:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Customer_Natalia_must_not_be_able_to_login_without_entering_credentials</a>
+<div class="">
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_without_entering_credentials</span>
 </div>
 </td>
 </tr>
@@ -814,15 +741,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>4</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -835,31 +762,41 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:21 PM</td>
+<td>22:14:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>Then The report should be successfully generated</a>
+<a href="#" class="linked" test-id='1' id='19'>Then customer Natalia should not be able to login successfully with invalid email format</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate an advertisement report.Then The report should be successfully generated</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format.Then customer Natalia should not be able to login successfully with invalid email format</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:22:51 PM</td>
+<td>22:14:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='30'>Then The report should be successfully generated</a>
+<a href="#" class="linked" test-id='1' id='21'>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a report by user role.Then The report should be successfully generated</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_with_invalid_email_format.getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:23:10 PM</td>
+<td>22:14:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='40'>Then The report should be successfully generated</a>
+<a href="#" class="linked" test-id='1' id='24'>Given Customer Natalia is on the "baseUrl" home page</a>
 <div class="">
-<span class="badge badge-default">Admin Report Management.Verify Admin can generate a tour request report.Then The report should be successfully generated</span>
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_without_entering_credentials.Given Customer Natalia is on the "baseUrl" home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:14:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">US_02 Customer's login functionality.Customer_Natalia_must_not_be_able_to_login_without_entering_credentials.getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
