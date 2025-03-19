@@ -6,9 +6,9 @@ Feature: Customer_search_Functionality
     And customer enters valid email
     And customer enters valid password
     And customer clicks of login button
-  @tc_01
+  @tc_01 @nrt
   Scenario: TC_01_Customer_general_search
-    Then customer clicks on rent button
+    And customer clicks on rent button
     And customer clicks on house category
     And customer clicks on search icon
     Then customer verifies the result page contains properties
@@ -16,7 +16,7 @@ Feature: Customer_search_Functionality
 
   @tc_02
   Scenario: TC_02_Customer_advanced_search
-    Then customer clicks on rent button
+    And customer clicks on rent button
     And customer clicks on house category
     And customer clicks on search icon
     And customer enters min price
@@ -32,7 +32,7 @@ Feature: Customer_search_Functionality
 
   @tc_03
   Scenario: TC_03_Customer_able_to_see_contact_information
-    Then customer clicks on rent button
+    And customer clicks on rent button
     And customer clicks on house category
     And customer clicks on search icon
     And customer clicks on property he choose
@@ -40,7 +40,7 @@ Feature: Customer_search_Functionality
     And customer closes the application
   @tc_04
   Scenario: TC_04_Customer_must_see_advertiser_information
-    Then customer clicks on rent button
+    And customer clicks on rent button
     And customer clicks on house category
     And customer clicks on search icon
     And customer clicks on property he choose
@@ -49,7 +49,7 @@ Feature: Customer_search_Functionality
     And customer closes the application
   @tc_05
   Scenario: TC_05_Customer_must_be_able_to_request_tour_request
-    Then customer clicks on rent button
+    And customer clicks on rent button
     And customer clicks on house category
     And customer clicks on search icon
     And customer clicks on property he choose
