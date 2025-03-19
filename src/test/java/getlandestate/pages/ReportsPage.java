@@ -20,6 +20,9 @@ public class ReportsPage {
     @FindBy(xpath = "(//div[@class='admin-report-button-wrapper'])[1]")
     public WebElement reportButton1Adverts;
 
+    @FindBy(xpath = "//input[@name='startDate']")
+    public WebElement startDateInput;
+
     @FindBy(xpath = "(//input[@name='startDate'])[1]")
     public WebElement startDate1;
 
@@ -98,3 +101,4 @@ public class ReportsPage {
 
 
 }
+

@@ -40,6 +40,9 @@ public class UsersPage {
 
     @FindBy(xpath = "//*[@id='email']")
     public WebElement userEmail;
+    @FindBy(id = "saveBtn")
+    public WebElement saveButton;
+
 
 
 

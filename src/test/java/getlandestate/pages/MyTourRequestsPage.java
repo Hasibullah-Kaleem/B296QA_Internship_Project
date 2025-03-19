@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MyTourRequestsPage {
-    public MyTourRequestsPage() {
+    public MyTourRequestsPage()
+    {
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy (xpath = "//p[text()='MY RESPONSES']")
@@ -25,9 +26,10 @@ public class MyTourRequestsPage {
     @FindBy (xpath = "//span[text()='DECLINED']")
     public WebElement declinedStatus;
 
-    @FindBy(xpath = "(//li[@class='nav-item'])[1]") public WebElement myTourRequests;
-    @FindBy(xpath = "(//span[@class='p-tag p-component'])[1]") public WebElement tourStatus;
-
+    @FindBy(xpath = "(//li[@class='nav-item'])[1]")
+    public WebElement myTourRequests;
+    @FindBy(xpath = "(//span[@class='p-tag p-component'])[1]")
+    public WebElement tourStatus;
 
     @FindBy(xpath = "//button[contains(@class, 'approve-button')]\n") public WebElement acceptButton;
     @FindBy(xpath = "//button[contains(@class, 'p-confirm-popup-accept')]\n") public WebElement yesButtonAccept;
@@ -42,4 +44,21 @@ public class MyTourRequestsPage {
     @FindBy(xpath = "//*[@id=\"react-aria8798142331-:r3:-tabpane-response\"]/div/div/div/div[1]/table/tbody/tr[1]/td[6]/div/span[2]/button[2]")
     public WebElement acceptButton2;
 
+
+    @FindBy(xpath = "//button[contains(@class, 'expand-button')]")
+    public WebElement expandDetails;
+
+    @FindBy(xpath = "//button[contains(@class, 'edit-owner-guest')]")
+    public WebElement editOwnerGuest;
+
+    @FindBy(xpath = "//input[@id='phoneNumber']")
+    public WebElement phoneNumberInput;
+
+    @FindBy(xpath = "//button[text()='Update']")
+    public WebElement updateButton;
+
+    @FindBy(xpath = "//div[contains(@class, 'error-message')]")
+    public WebElement errorMessage;
 }
+
+
