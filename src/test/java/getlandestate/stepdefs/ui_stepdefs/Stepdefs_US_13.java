@@ -8,10 +8,9 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 public class Stepdefs_US_13 {
-    MyTourRequestsPage myTourRequestsPage;
+    MyTourRequestsPage myTourRequestsPage = new MyTourRequestsPage();
     @And("I click on the Accept button for a pending tour request associated with an ad")
     public void iClickOnTheAcceptButtonForAPendingTourRequestAssociatedWithAnAd() {
-        myTourRequestsPage = new MyTourRequestsPage();
         myTourRequestsPage.actionYesTick.click();
     }
 
@@ -29,7 +28,6 @@ public class Stepdefs_US_13 {
 
     @And("I click on the Reject button for a pending tour request associated with an ad")
     public void iClickOnTheRejectButtonForAPendingTourRequestAssociatedWithAnAd() {
-        myTourRequestsPage = new MyTourRequestsPage();
         myTourRequestsPage.actionNoTick.click();
         WaitUtils.waitFor(2);
     }
