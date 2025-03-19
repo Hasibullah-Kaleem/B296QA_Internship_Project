@@ -25,14 +25,14 @@ public class StepDefs_US_15 {
     AdvertTypesPage advertTypesPage = new AdvertTypesPage();
 
     // Background
-    @Given("I navigate to {string} using a web browser")
-    public void i_navigate_to_using_a_web_browser(String url) {
+    @Given("I navigate to {string} using web browser")
+    public void i_navigate_to_using_web_browser(String url) {
         Driver.getDriver().get(url);
         System.out.println("Navigated to: " + url);
     }
 
-    @When("I click on the Login button on the homepage")
-    public void i_click_on_the_login_button_on_the_homepage() {
+    @When("I click on the Login button on the Homepage")
+    public void i_click_on_the_login_button_on_the_Homepage() {
         homePage.loginOption.click();
         System.out.println("Clicked on login button.");
     }
