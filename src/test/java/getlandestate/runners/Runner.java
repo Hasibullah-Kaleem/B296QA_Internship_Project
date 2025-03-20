@@ -19,16 +19,18 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
-        features = "src/test/resources/features/ui_features",
-        glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
+       // features = "src/test/resources/features/ui_features",
+        features = "src/test/resources/features",
+
+       // glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
+        glue = {
+                "getlandestate.stepdefs.api",
+                "getlandestate.stepdefs.db",
+                "getlandestate.stepdefs.ui_stepdefs"
+        },
         dryRun = false,
-<<<<<<< HEAD
-        tags =  "@us_15"
-=======
 
-
-        tags =  "@us_16"
->>>>>>> main
+        tags =  "@db"
 
 
 )

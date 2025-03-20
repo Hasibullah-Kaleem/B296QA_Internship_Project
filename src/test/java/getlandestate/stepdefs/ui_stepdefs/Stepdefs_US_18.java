@@ -171,8 +171,8 @@ public class Stepdefs_US_18 {
         assertTrue(toastMessage.getText().contains("TourRequest created successfully"));
         MediaUtils.takeScreenshotOfTheEntirePage();
 //logout from user profile
-        homePage.userProfil.click();
-        homePage.logoutButton.click();
+     //   homePage.userProfil.click();
+       // homePage.logoutButton.click();
         actions.sendKeys(Keys.ENTER).perform();
     }
 
@@ -257,9 +257,9 @@ public class Stepdefs_US_18 {
            MediaUtils.takeScreenshotOfTheEntirePage();
 
             //logout from user profile
-            homePage.userProfil.click();
-            homePage.logoutButton.click();
-            actions.sendKeys(Keys.ENTER).perform();
+          //  homePage.userProfil.click();
+            //homePage.logoutButton.click();
+           // actions.sendKeys(Keys.ENTER).perform();
 
         }
 
