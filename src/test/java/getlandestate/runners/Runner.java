@@ -30,7 +30,10 @@ import org.junit.runner.RunWith;
         },
         dryRun = false,
 
-        tags =  "@db"
+
+        tags =  "@us_10"
+
+
 
 
 )

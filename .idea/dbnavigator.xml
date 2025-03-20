@@ -36,15 +36,10 @@ SELECT COUNT(*) FROM tour_requests;]]></console>
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="361f0b4d-c3ea-420d-91e2-af83d4e73fde" object-ref="consoles/GetLandEstate" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="361f0b4d-c3ea-420d-91e2-af83d4e73fde" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="361f0b4d-c3ea-420d-91e2-af83d4e73fde" dataset="public.categories" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
