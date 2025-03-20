@@ -25,26 +25,26 @@ public class StepDefs_US_15 {
     AdvertTypesPage advertTypesPage = new AdvertTypesPage();
 
     // Background
-    @Given("I navigate to {string} using a web browser")
-    public void i_navigate_to_using_a_web_browser(String url) {
-        Driver.getDriver().get(url);
-        System.out.println("Navigated to: " + url);
-    }
+//    @Given("I navigate to {string} using a web browser")
+//    public void i_navigate_to_using_a_web_browser(String url) {
+//        Driver.getDriver().get(url);
+//        System.out.println("Navigated to: " + url);
+//    }
 
-    @When("I click on the Login button on the homepage")
-    public void i_click_on_the_login_button_on_the_homepage() {
-        homePage.loginOption.click();
-        System.out.println("Clicked on login button.");
-    }
+//    @When("I click on the Login button on the homepage")
+//    public void i_click_on_the_login_button_on_the_homepage() {
+//        homePage.loginOption.click();
+//        System.out.println("Clicked on login button.");
+//    }
 
-    @When("I enter valid Admin credentials")
-    public void i_enter_valid_admin_credentials() {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-        loginPage.emailInput.sendKeys("engineerhulya@hotmail.com");
-        loginPage.passwordInput.sendKeys("Hulyatas2025?");
-        loginPage.loginButton.click();
-        System.out.println("Entered Admin credentials and clicked login.");
-    }
+//    @When("I enter valid Admin credentials")
+//    public void i_enter_valid_admin_credentials() {
+//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+//        loginPage.emailInput.sendKeys("engineerhulya@hotmail.com");
+//        loginPage.passwordInput.sendKeys("Hulyatas2025?");
+//        loginPage.loginButton.click();
+//        System.out.println("Entered Admin credentials and clicked login.");
+//    }
 
     @Then("I should be redirected to the Dashboard")
     public void i_should_be_redirected_to_the_dashboard() {

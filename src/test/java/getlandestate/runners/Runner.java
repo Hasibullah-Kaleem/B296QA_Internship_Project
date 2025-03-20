@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
 
 
-        tags =  "@us_16"
+        tags =  "@us_10"
 
 
 )
