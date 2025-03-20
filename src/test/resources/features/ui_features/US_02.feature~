@@ -22,4 +22,7 @@
       And customer Natalia closes the application
 
     @tc_03_customer_natalia_unsuccessful_login
-    Scenario: 
+    Scenario: Customer_Natalia_must_not_be_able_to_login_without_entering_credentials
+      And customer Natalia clicks of LOGIN button
+      Then customer Natalia should not be able to login successfully without entering credentials
+      And customer Natalia closes the application

@@ -1,4 +1,4 @@
-@us_02
+@us_02 @natalia
   Feature: US_02 Customer's login functionality
 
     Background: Navigate home page
