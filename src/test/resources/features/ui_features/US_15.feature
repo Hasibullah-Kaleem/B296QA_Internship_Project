@@ -2,8 +2,8 @@
 Feature: Admin Advertisement Management
 
   Background:
-    Given I navigate to "http://64.227.123.49/" using a web browser
-    When I click on the Login button on the homepage
+    Given I navigate to "http://64.227.123.49/" using web browser
+    When I click on the Login button on the Homepage
     And I enter valid Admin credentials
     Then I should be redirected to the Dashboard
 
