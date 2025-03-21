@@ -46,9 +46,8 @@ public class Stepdefs_US_02 {
     @And("customer Natalia clicks of LOGIN button")
     public void customerNataliaClicksOfLOGINButton() {
         if (loginPage.login.isEnabled()) {
-
+            loginPage.login.click();
         }
-        loginPage.login.click();
         WaitUtils.waitFor(5);
     }
 

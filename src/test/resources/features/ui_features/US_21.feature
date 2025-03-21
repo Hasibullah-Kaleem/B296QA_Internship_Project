@@ -1,4 +1,4 @@
-@us_21 @natalia
+@us_21 @natalia_ui @natalia
 Feature: US_21 Admin's Contact Message Management
 
   As an Admin

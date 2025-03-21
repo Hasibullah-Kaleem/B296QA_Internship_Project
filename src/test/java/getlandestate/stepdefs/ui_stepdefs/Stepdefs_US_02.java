@@ -4,14 +4,12 @@ import getlandestate.pages.HomePage;
 import getlandestate.pages.LoginPage;
 import getlandestate.utilities.ConfigReader;
 import getlandestate.utilities.Driver;
-import getlandestate.utilities.MediaUtils;
 import getlandestate.utilities.WaitUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import java.io.IOException;
 
 import static org.junit.Assert.assertTrue;
 

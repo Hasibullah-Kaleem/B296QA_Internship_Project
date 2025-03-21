@@ -12,15 +12,36 @@
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants />
   </component>
+
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
+
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections />
