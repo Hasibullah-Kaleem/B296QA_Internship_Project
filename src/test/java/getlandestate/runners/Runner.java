@@ -19,12 +19,12 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
-        features = "src/test/resources/features/ui_features",
-        glue = {"getlandestate.stepdefs.ui_stepdefs", "getlandestate.hooks"},
+        features = "src/test/resources/features",
+        glue = {"getlandestate.stepdefs", "getlandestate.hooks"},
         dryRun = false,
 
 
-        tags =  "@us_10"
+        tags =  "@db_us_03"
 
 
 )
