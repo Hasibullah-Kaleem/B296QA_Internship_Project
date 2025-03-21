@@ -12,24 +12,52 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="361f0b4d-c3ea-420d-91e2-af83d4e73fde">
-      <console name="GetLandEstate" type="STANDARD" schema="" session="Main"><![CDATA[SELECT * FROM information_schema.tables WHERE table_name = 'profile_photos';
+      <console name="GetLandEstate" type="STANDARD" schema="" session="Main"><![CDATA[SELECT table_name 
+FROM information_schema.tables 
+WHERE table_schema = 'public';
 
-SELECT column_name, data_type
-FROM information_schema.columns
-WHERE table_schema = 'public' AND table_name = 'profile_photos';
 
-SELECT COUNT(*) FROM profile_photos;
+SELECT column_name, data_type 
+FROM information_schema.columns 
+WHERE table_name = 'profile_photos';
 
-SELECT column_name, data_type
-FROM information_schema.columns
-WHERE table_name = 'tour_requests';
+SELECT * FROM profile_photos LIMIT 10;
 
-SELECT COUNT(*) FROM tour_requests;]]></console>
+SELECT id, COUNT(*) 
+FROM profile_photos 
+GROUP BY id 
+HAVING COUNT(*) > 1;
+
+SELECT DISTINCT type FROM profile_photos;
+
+SELECT * 
+FROM profile_photos 
+WHERE id IS NULL 
+   OR data IS NULL 
+   OR name IS NULL 
+   OR type IS NULL;
+
+SELECT id, data, name, type, LENGTH(data::text) AS data_length
+FROM profile_photos
+WHERE data IS NULL OR LENGTH(data::text) = 0;
+
+DELETE FROM profile_photos WHERE data IS NULL;
+UPDATE profile_photos 
+SET data = (SELECT data FROM profile_photos WHERE id = (SELECT MIN(id) FROM profile_photos WHERE data IS NOT NULL))
+WHERE id IN (5, 15, 7);
+SELECT grantee, privilege_type 
+FROM information_schema.role_table_grants 
+WHERE table_name = 'profile_photos';
+
+
+SELECT grantee, privilege_type 
+FROM information_schema.role_table_grants 
+WHERE table_name = 'profile_photos';]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -40,6 +68,9 @@ SELECT COUNT(*) FROM tour_requests;]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="361f0b4d-c3ea-420d-91e2-af83d4e73fde" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="361f0b4d-c3ea-420d-91e2-af83d4e73fde" dataset="public.profile_photos" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

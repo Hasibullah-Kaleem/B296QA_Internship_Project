@@ -26,12 +26,13 @@ import org.junit.runner.RunWith;
         glue = {
                 "getlandestate.stepdefs.api",
                 "getlandestate.stepdefs.db",
-                "getlandestate.stepdefs.ui_stepdefs"
+                "getlandestate.stepdefs.ui_stepdefs",
+                "getlandestate.stepdefs.db_stepdefs"
         },
         dryRun = false,
 
 
-        tags =  "@us_10"
+        tags =  "@db_us_13"
 
 
 

@@ -14,7 +14,7 @@ public class DBUtils {
     public static Connection connectToDatabase() {
 
         try {
-            connection = DriverManager.getConnection("jdbc:postgresql:/", "", "");
+            connection = DriverManager.getConnection("jdbc:postgresql://64.227.123.49:5432/prettierhomes", "techprotester", "myPassword");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
