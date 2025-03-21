@@ -3,7 +3,7 @@ package getlandestate.hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-
+import getlandestate.utilities.DBUtils;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,16 +21,24 @@ public class Hooks {
 //    }
 
 
+    @Before ("@db")
+    public void connectToDatabase() {
+        DBUtils.connectToDatabase();
+    }
+
+    @After("@db")
+    public void closeDatabaseConnection() {
+        DBUtils.closeConnection();
+    }
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
 
         System.out.println("Before hook executed...");
 
         //We can add some credetentials to setup our test cases such as Api credentials, db credentials
     }
-
 
 
     @After

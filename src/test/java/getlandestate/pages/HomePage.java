@@ -12,7 +12,11 @@ public class HomePage {
     @FindBy(xpath = "//a[text()='Login']")
     //*[@id="offcanvas-menu"]/div[2]/div[2]/div[1]/a[1]
     public WebElement loginOption;
+    @FindBy(xpath = "//*[@id=\"root\"]/div[1]/nav/div/div[2]/div")
+    public WebElement userProfil;
 
+    @FindBy(xpath = "//*[@id=\"subMenu\"]/div/a[6]")
+    public WebElement logoutButton;
 
     @FindBy(xpath = "//div[@class='hero']")
     public WebElement userProfile;

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">mars 16, 2025 10:51:48 AM</span></a>
+<a href="#"><span class="badge badge-primary">mars 21, 2025 06:35:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>mars 16, 2025 10:51:48 AM</h3>
+<h3>mars 21, 2025 06:35:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>mars 16, 2025 10:52:33 AM</h3>
+<h3>mars 21, 2025 06:35:40 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>18</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Manager advertisement management":44.783
+"US_09_CategoryPropertyKeysNamesAndInfo_DBValidation":1.477
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@us_18</td>
+<td>@db</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -180,7 +180,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TC_02_US18</td>
+<td>@db_us_09_tc_01</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -188,8 +188,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TC_01_US18</td>
+<td>@db_us_09_tc_02</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_us_09</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -229,7 +237,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 18,
+passGrandChild: 6,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -254,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@us_18</a><a class="dropdown-item" href="#">@TC_02_US18</a><a class="dropdown-item" href="#">@TC_01_US18</a>
+<a class="dropdown-item" href="#">@db</a><a class="dropdown-item" href="#">@db_us_09_tc_01</a><a class="dropdown-item" href="#">@db_us_09_tc_02</a><a class="dropdown-item" href="#">@db_us_09</a>
 </ul>
 </li>
 </ul>
@@ -265,9 +273,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Manager advertisement management</p>
+            <p class="name">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation</p>
             <p class="text-sm">
-              <span>10:51:49</span> / <span>00:00:44:783</span>
+              <span>18:35:39</span> / <span>00:00:01:477</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -275,10 +283,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Manager advertisement management</h5>
-<span class='badge badge-success'>03.16.2025 10:51:49</span>
-<span class='badge badge-danger'>03.16.2025 10:52:33</span>
-<span class='badge badge-default'>00:00:44:783</span>
+<h5 class="test-status text-pass">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation</h5>
+<span class='badge badge-success'>03.21.2025 18:35:39</span>
+<span class='badge badge-danger'>03.21.2025 18:35:40</span>
+<span class='badge badge-default'>00:00:01:477</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -290,53 +298,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_01 - Verify Manager Can request to see an ad on the page</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_01_verify the columns name of the category_property_keys table</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iOpenInAWebBrowser(java.lang.String)">
-                <span>Given I open "http://64.227.123.49/" with a web browser</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminConnectsToThePostgreSqlDatabase()">
+                <span>Given Admin connects to the PostgreSql database for US_09</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iSelectTheLoginButtonOnTheHomepageToLogin()">
-                <span>When I select the Login button on the homepage to login</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminExecutesTheQuerySelectFromCategory_property_keysForUS(int)">
+                <span>When Admin executes the query select * from category_property_keys for US_9</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iGiveValidManagerCredentialsWithUsernameAndPassword(java.lang.String,java.lang.String)">
-                <span>And I give valid manager credentials with username "boukmanager@gmail.com" and password "12345678Bouk@"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iNavigateBackToTheHomepageByClickingTheBackToSiteTabOnTheLeftSideOfTheDashboard()">
-                <span>And I navigate back to the homepage by clicking the Back to Site tab on the left side of the dashboard</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iClickOnThePropertiesTabOnTheHomepageToSeePropertiesAvailable()">
-                <span>Given I click on the properties tab on the homepage to see properties available</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iChooseAPropertyToView()">
-                <span>And I choose a property to view</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iChooseATourDateAndTime()">
-                <span>And I choose a Tour date and time</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iClickOnTheSubmitATourRequestButton()">
-                <span>And I click on the submit a tour request button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iShouldSeeAMessageThatTheTourRequestHasBeenSubmittedSuccessfully()">
-                <span>Then I should see a message that the tour request has been submitted successfully</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminValidatesTheColumnsNameOfTheCategory_property_keysTable()">
+                <span>Then Admin validates the columns name of the category_property_keys table</span>
       <div>
       </div>
               </div>
@@ -346,53 +324,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements</div>
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>TC_02_verify the columns information of the category_property_keys table for id = 5</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iOpenInAWebBrowser(java.lang.String)">
-                <span>Given I open "http://64.227.123.49/" with a web browser</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminConnectsToThePostgreSqlDatabase()">
+                <span>Given Admin connects to the PostgreSql database for US_09</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iSelectTheLoginButtonOnTheHomepageToLogin()">
-                <span>When I select the Login button on the homepage to login</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminExecutesTheQuerySelectFromCategory_property_keysWhereId(int)">
+                <span>When Admin executes the query select * from category_property_keys where id = 5</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iGiveValidManagerCredentialsWithUsernameAndPassword(java.lang.String,java.lang.String)">
-                <span>And I give valid manager credentials with username "boukmanager@gmail.com" and password "12345678Bouk@"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iNavigateBackToTheHomepageByClickingTheBackToSiteTabOnTheLeftSideOfTheDashboard()">
-                <span>And I navigate back to the homepage by clicking the Back to Site tab on the left side of the dashboard</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.i_click_on_the_profile_button_at_the_top_right_corner_of_the_website()">
-                <span>Given I click on the Profile button at the top-right corner of the website</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iNavigateToTheMyTourRequestsPage()">
-                <span>And I navigate to the My tour requests page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iClickOnMYRESPONSESTabToSeeTheTourRequestsFromOtherUsers()">
-                <span>And I click on MY RESPONSES tab to see the tour requests from other users</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iChooseToAcceptOrRejectATourRequest()">
-                <span>And I choose to accept or reject a tour request</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.ui_stepdefs.Stepdefs_US_18.iShouldSeeAMessageThatTheTourRequestHasBeenAcceptedOrRejectedSuccessfully()">
-                <span>Then I should see a message that the tour request has been accepted or rejected successfully</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.StepDefs_DB_US_09.adminValidatesTheColumnInformationOfTheCategory_property_keysTableForId(int)">
+                <span>Then Admin validates the column information of the category_property_keys table for id = 5</span>
       <div>
       </div>
               </div>
@@ -415,7 +363,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -424,12 +372,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@us_18</p>
+<p class="name">@db</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@us_18</h4>
+<h4>@db</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -443,21 +391,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:51:49 AM</td>
+<td>18:35:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01 - Verify Manager Can request to see an ad on the page</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_01_verify the columns name of the category_property_keys table</a>
 <div class="">
-<span class="badge badge-default">Manager advertisement management.TC_01 - Verify Manager Can request to see an ad on the page</span>
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_01_verify the columns name of the category_property_keys table</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:52:18 AM</td>
+<td>18:35:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements</a>
+<a href="#" class="linked" test-id='1' id='10'>TC_02_verify the columns information of the category_property_keys table for id = 5</a>
 <div class="">
-<span class="badge badge-default">Manager advertisement management.TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements</span>
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_02_verify the columns information of the category_property_keys table for id = 5</span>
 </div>
 </td>
 </tr>
@@ -470,12 +418,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TC_02_US18</p>
+<p class="name">@db_us_09_tc_01</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TC_02_US18</h4>
+<h4>@db_us_09_tc_01</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -489,11 +437,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:52:18 AM</td>
+<td>18:35:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_01_verify the columns name of the category_property_keys table</a>
 <div class="">
-<span class="badge badge-default">Manager advertisement management.TC_02 - Verify Manager Can see, accept and reject tour requests of his own advertisements</span>
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_01_verify the columns name of the category_property_keys table</span>
 </div>
 </td>
 </tr>
@@ -506,12 +454,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TC_01_US18</p>
+<p class="name">@db_us_09_tc_02</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TC_01_US18</h4>
+<h4>@db_us_09_tc_02</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -525,11 +473,57 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:51:49 AM</td>
+<td>18:35:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01 - Verify Manager Can request to see an ad on the page</a>
+<a href="#" class="linked" test-id='1' id='10'>TC_02_verify the columns information of the category_property_keys table for id = 5</a>
 <div class="">
-<span class="badge badge-default">Manager advertisement management.TC_01 - Verify Manager Can request to see an ad on the page</span>
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_02_verify the columns information of the category_property_keys table for id = 5</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@db_us_09</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_us_09</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_01_verify the columns name of the category_property_keys table</a>
+<div class="">
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_01_verify the columns name of the category_property_keys table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>TC_02_verify the columns information of the category_property_keys table for id = 5</a>
+<div class="">
+<span class="badge badge-default">US_09_CategoryPropertyKeysNamesAndInfo_DBValidation.TC_02_verify the columns information of the category_property_keys table for id = 5</span>
 </div>
 </td>
 </tr>
