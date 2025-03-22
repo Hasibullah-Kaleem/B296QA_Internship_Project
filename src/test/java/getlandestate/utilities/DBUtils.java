@@ -87,9 +87,11 @@ public class DBUtils {
     public static void closeConnection(){
 
         try {
-
-            connection.close();
-            statement.close();
+//            connection.close();
+//            statement.close();
+            if (connection != null && !connection.isClosed()) {
+                connection.close();
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
