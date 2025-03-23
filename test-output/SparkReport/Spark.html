@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 23, 2025 01:31:11 AM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 22, 2025 12:08:29 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 23, 2025 01:31:11 AM</h3>
+<h3>Mar 22, 2025 12:08:29 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 23, 2025 01:31:13 AM</h3>
+<h3>Mar 22, 2025 12:08:33 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"DB_US_02 Validate categories column names and information":1.404
+"US_13 - Validate profile_photos table structure and data integrity":2.798
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tc_02_db_us_02</td>
+<td>@db_us13_tc02</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,8 +180,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@db_us_02</td>
+<td>@db_us13_tc01</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_us_13</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -215,13 +223,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 2,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 8,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -246,7 +254,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tc_02_db_us_02</a><a class="dropdown-item" href="#">@db_us_02</a>
+<a class="dropdown-item" href="#">@db_us13_tc02</a><a class="dropdown-item" href="#">@db_us13_tc01</a><a class="dropdown-item" href="#">@db_us_13</a>
 </ul>
 </li>
 </ul>
@@ -257,9 +265,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DB_US_02 Validate categories column names and information</p>
+            <p class="name">US_13 - Validate profile_photos table structure and data integrity</p>
             <p class="text-sm">
-              <span>1:31:12 AM</span> / <span>00:00:01:404</span>
+              <span>12:08:30 AM</span> / <span>00:00:02:798</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -267,10 +275,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DB_US_02 Validate categories column names and information</h5>
-<span class='badge badge-success'>03.23.2025 1:31:12 AM</span>
-<span class='badge badge-danger'>03.23.2025 1:31:13 AM</span>
-<span class='badge badge-default'>00:00:01:404</span>
+<h5 class="test-status text-pass">US_13 - Validate profile_photos table structure and data integrity</h5>
+<span class='badge badge-success'>03.22.2025 12:08:30 AM</span>
+<span class='badge badge-danger'>03.22.2025 12:08:33 AM</span>
+<span class='badge badge-default'>00:00:02:798</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,30 +290,61 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify data integrity for id = 184 in categories table</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check that profile_photos table has correct columns</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.the_database_connection_is_established()">
-                <span>Given the database connection is established</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.establish_database_connection()">
+                <span>Given Establish database connection</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_executes_the_query_to_fetch_the_record_where_id(java.lang.Integer)">
-                <span>When Admin Goychak executes the query to fetch the record where id is 184</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.run_the_query(java.lang.String)">
+                <span>When Run the query "SELECT column_name FROM information_schema.columns WHERE table_name = 'profile_photos';"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_verifies_that_the_retrieved_field_data_matches_the_expected_values(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Goychak verifies that the retrieved field data matches the expected values:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td><td>Expected Value</td></tr><tr><td>id</td><td>184</td></tr><tr><td>is_active</td><td>true</td></tr><tr><td>built_in</td><td>false</td></tr><tr><td>icon</td><td>tree</td></tr><tr><td>title</td><td>bungalow</td></tr></table>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.check_if_the_table_has_the_following_columns(java.util.List<java.lang.String>)">
+                <span>Then Check if the table has the following columns:</span>
+      <div><table class='markup-table table '><tr><td>id</td></tr><tr><td>data</td></tr><tr><td>name</td></tr><tr><td>type</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_closes_the_database_connection()">
-                <span>And Admin Goychak closes the database connection</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.terminate_the_database_connection()">
+                <span>And Terminate the database connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Check that profile_photos table contains data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.establish_database_connection()">
+                <span>Given Establish database connection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.run_the_query(java.lang.String)">
+                <span>When Run the query "SELECT COUNT(*) FROM profile_photos;"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.confirm_that_the_query_result_is_greater_than(java.lang.Integer)">
+                <span>Then Confirm that the query result is greater than 0</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_13_StepDefs.terminate_the_database_connection()">
+                <span>And Terminate the database connection</span>
       <div>
       </div>
               </div>
@@ -328,7 +367,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -337,12 +376,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tc_02_db_us_02</p>
+<p class="name">@db_us13_tc02</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_02_db_us_02</h4>
+<h4>@db_us13_tc02</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -356,11 +395,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:31:12 AM</td>
+<td>00:08:31 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify data integrity for id = 184 in categories table</a>
+<a href="#" class="linked" test-id='1' id='7'>Check that profile_photos table contains data</a>
 <div class="">
-<span class="badge badge-default">DB_US_02 Validate categories column names and information.Verify data integrity for id = 184 in categories table</span>
+<span class="badge badge-default">US_13 - Validate profile_photos table structure and data integrity.Check that profile_photos table contains data</span>
 </div>
 </td>
 </tr>
@@ -373,12 +412,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@db_us_02</p>
+<p class="name">@db_us13_tc01</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@db_us_02</h4>
+<h4>@db_us13_tc01</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -392,11 +431,57 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:31:12 AM</td>
+<td>00:08:30 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify data integrity for id = 184 in categories table</a>
+<a href="#" class="linked" test-id='1' id='2'>Check that profile_photos table has correct columns</a>
 <div class="">
-<span class="badge badge-default">DB_US_02 Validate categories column names and information.Verify data integrity for id = 184 in categories table</span>
+<span class="badge badge-default">US_13 - Validate profile_photos table structure and data integrity.Check that profile_photos table has correct columns</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@db_us_13</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_us_13</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:08:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Check that profile_photos table has correct columns</a>
+<div class="">
+<span class="badge badge-default">US_13 - Validate profile_photos table structure and data integrity.Check that profile_photos table has correct columns</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:08:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Check that profile_photos table contains data</a>
+<div class="">
+<span class="badge badge-default">US_13 - Validate profile_photos table structure and data integrity.Check that profile_photos table contains data</span>
 </div>
 </td>
 </tr>
