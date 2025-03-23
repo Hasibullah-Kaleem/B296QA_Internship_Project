@@ -3,6 +3,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### IntelliJ - Exclude entire folder ###
+.idea/
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
@@ -36,3 +39,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Force include these specific files (DB_US_13 only)
+!src/test/resources/features/db_features/DB_US_13.feature
+!src/test/java/getlandestate/stepdefs/db_stepdefs/DB_US_13_StepDefs.java
