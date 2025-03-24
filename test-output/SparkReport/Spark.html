@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 23, 2025 06:58:09 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 21, 2025 06:52:30 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 23, 2025 06:58:09 PM</h3>
+<h3>Mar 21, 2025 06:52:30 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 23, 2025 06:58:13 PM</h3>
+<h3>Mar 21, 2025 06:52:32 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"DB_US_18 Verify favorites column names and information":2.602
+"DB_US_05 Verify daily_reports table structure and data integrity":1.078
 };
 </script>
 <div class="row">
@@ -172,15 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tc_01_db_us_18</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@db_us_18</td>
+<td>@natalia</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -188,7 +180,31 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@tc_02_db_us_18</td>
+<td>@natalia_db</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_us_05</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc_02_daily_reports_table_data_integrity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc_01_daily_reports_table_column_name_validation</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -254,7 +270,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tc_01_db_us_18</a><a class="dropdown-item" href="#">@db_us_18</a><a class="dropdown-item" href="#">@tc_02_db_us_18</a>
+<a class="dropdown-item" href="#">@natalia</a><a class="dropdown-item" href="#">@natalia_db</a><a class="dropdown-item" href="#">@db_us_05</a><a class="dropdown-item" href="#">@tc_02_daily_reports_table_data_integrity</a><a class="dropdown-item" href="#">@tc_01_daily_reports_table_column_name_validation</a>
 </ul>
 </li>
 </ul>
@@ -265,9 +281,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DB_US_18 Verify favorites column names and information</p>
+            <p class="name">DB_US_05 Verify daily_reports table structure and data integrity</p>
             <p class="text-sm">
-              <span>6:58:10 PM</span> / <span>00:00:02:602</span>
+              <span>18:52:31</span> / <span>00:00:01:078</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -275,10 +291,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DB_US_18 Verify favorites column names and information</h5>
-<span class='badge badge-success'>03.23.2025 6:58:10 PM</span>
-<span class='badge badge-danger'>03.23.2025 6:58:13 PM</span>
-<span class='badge badge-default'>00:00:02:602</span>
+<h5 class="test-status text-pass">DB_US_05 Verify daily_reports table structure and data integrity</h5>
+<span class='badge badge-success'>03.21.2025 18:52:31</span>
+<span class='badge badge-danger'>03.21.2025 18:52:32</span>
+<span class='badge badge-default'>00:00:01:078</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -290,30 +306,30 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify column names in the favorites table</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate column names in daily_reports table</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.the_database_connection_is_established()">
-                <span>Given the database connection is established</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
+                <span>Given Admin Natalia connects to the database</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_executes_the_query(java.lang.String)">
-                <span>When Admin Goychak executes the query "SELECT * FROM favorites;"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
+                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports;"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_verifies_the_retrieved_field_names_should_contain_the_following_columns(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Goychak verifies the retrieved field names should contain the following columns:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td></tr><tr><td>id</td></tr><tr><td>created_at</td></tr><tr><td>updated_at</td></tr><tr><td>advert_id</td></tr><tr><td>user_id</td></tr></table>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheTableShouldHaveTheFollowingColumns(io.cucumber.datatable.DataTable)">
+                <span>Then Admin Natalia verifies that the table should have the following columns:</span>
+      <div><table class='markup-table table '><tr><td>Column Name</td></tr><tr><td>id</td></tr><tr><td>date</td></tr><tr><td>number_of_contact_message</td></tr><tr><td>number_of_favorites</td></tr><tr><td>number_of_rent_adverts</td></tr><tr><td>number_of_sale_adverts</td></tr><tr><td>number_of_tour_requests</td></tr><tr><td>number_of_users</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_closes_the_database_connection()">
-                <span>And Admin Goychak closes the database connection</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
+                <span>And Admin Natalia closes the database connection</span>
       <div>
       </div>
               </div>
@@ -323,30 +339,30 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Verify data integrity for id = 122 in favorites table</div>
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Validate data integrity for id = 132 in daily_reports table</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.the_database_connection_is_established()">
-                <span>Given the database connection is established</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
+                <span>Given Admin Natalia connects to the database</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_executes_the_query_to_fetch_the_record_where_id_is_in_table(java.lang.Integer,java.lang.String)">
-                <span>When Admin Goychak executes the query to fetch the record where id is 122 in "favorites" table</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
+                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports WHERE id = 132;"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_verifies_that_the_retrieved_field_data_matches_the_expected_values(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Goychak verifies that the retrieved field data matches the expected values:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td><td>Expected Value</td></tr><tr><td>id</td><td>122</td></tr><tr><td>advert_id</td><td>31</td></tr><tr><td>user_id</td><td>581</td></tr></table>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheRecordShouldHaveTheFollowingValues(io.cucumber.datatable.DataTable)">
+                <span>Then Admin Natalia verifies that the record should have the following values:</span>
+      <div><table class='markup-table table '><tr><td>Column Name</td><td>Expected Value</td></tr><tr><td>id</td><td>132</td></tr><tr><td>date</td><td>2024-11-10</td></tr><tr><td>number_of_contact_message</td><td>101</td></tr><tr><td>number_of_favorites</td><td>56</td></tr><tr><td>number_of_rent_adverts</td><td>35</td></tr><tr><td>number_of_sale_adverts</td><td>57</td></tr><tr><td>number_of_tour_requests</td><td>60</td></tr><tr><td>number_of_users</td><td>268</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_01_02_17_18_Stepdefs.admin_goychak_closes_the_database_connection()">
-                <span>And Admin Goychak closes the database connection</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
+                <span>And Admin Natalia closes the database connection</span>
       <div>
       </div>
               </div>
@@ -369,57 +385,21 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tc_01_db_us_18</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tc_01_db_us_18</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:58:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Verify column names in the favorites table</a>
-<div class="">
-<span class="badge badge-default">DB_US_18 Verify favorites column names and information.Verify column names in the favorites table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@db_us_18</p>
+<p class="name">@natalia</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@db_us_18</h4>
+<h4>@natalia</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -433,21 +413,113 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:58:10 PM</td>
+<td>18:52:31 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify column names in the favorites table</a>
+<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
 <div class="">
-<span class="badge badge-default">DB_US_18 Verify favorites column names and information.Verify column names in the favorites table</span>
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:58:12 PM</td>
+<td>18:52:32 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Verify data integrity for id = 122 in favorites table</a>
+<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
 <div class="">
-<span class="badge badge-default">DB_US_18 Verify favorites column names and information.Verify data integrity for id = 122 in favorites table</span>
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@natalia_db</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@natalia_db</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:52:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<div class="">
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
+<div class="">
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@db_us_05</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_us_05</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:52:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<div class="">
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
+<div class="">
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
 </div>
 </td>
 </tr>
@@ -460,12 +532,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tc_02_db_us_18</p>
+<p class="name">@tc_02_daily_reports_table_data_integrity</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_02_db_us_18</h4>
+<h4>@tc_02_daily_reports_table_data_integrity</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -479,11 +551,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:58:12 PM</td>
+<td>18:52:32 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Verify data integrity for id = 122 in favorites table</a>
+<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
 <div class="">
-<span class="badge badge-default">DB_US_18 Verify favorites column names and information.Verify data integrity for id = 122 in favorites table</span>
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc_01_daily_reports_table_column_name_validation</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc_01_daily_reports_table_column_name_validation</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:52:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<div class="">
+<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
 </div>
 </td>
 </tr>
