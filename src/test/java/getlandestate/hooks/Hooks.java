@@ -1,6 +1,7 @@
 package getlandestate.hooks;
 
 import getlandestate.utilities.Authentication;
+import getlandestate.utilities.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -14,15 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import getlandestate.utilities.Driver;
 
 public class Hooks {
-    public static void main(String[] args) {
 
-    }
-
-
-
-    String email = "admin@gmail.com";
-    String password = "admin123!";
-    public static RequestSpecification spec;
 
 //
 //    @Before("@pr_iphone or @pr_tesla")
@@ -32,11 +25,21 @@ public class Hooks {
 //        // Do something before each scenario
 //    }
 
+    public static RequestSpecification spec;
 
+    @Before("@api")
+    public void setUpAPI(){
+
+        spec = new RequestSpecBuilder()
+                .setBaseUri(ConfigReader.getProperty("apiBaseUrl"))
+                .setContentType(ContentType.JSON)
+                .addHeader("Authorization", Authentication.generateToken())
+                .build();
+
+    }
 
     @Before
     public void setUp(){
-
 
         System.out.println("Before hook executed...");
 
