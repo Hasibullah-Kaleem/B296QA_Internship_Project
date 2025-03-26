@@ -1,10 +1,15 @@
 package getlandestate.hooks;
 
+import getlandestate.utilities.Authentication;
+import getlandestate.utilities.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import getlandestate.utilities.Driver;
@@ -20,11 +25,21 @@ public class Hooks {
 //        // Do something before each scenario
 //    }
 
+    public static RequestSpecification spec;
 
+    @Before("@api_us04")
+    public void setUpAPI(){
+
+        spec = new RequestSpecBuilder()
+                .setBaseUri(ConfigReader.getProperty("apiBaseUrl"))
+                .setContentType(ContentType.JSON)
+                .addHeader("Authorization", Authentication.generateToken("admin@gmail.com","admin123!"))
+                .build();
+
+    }
 
     @Before
     public void setUp(){
-
 
         System.out.println("Before hook executed...");
 
