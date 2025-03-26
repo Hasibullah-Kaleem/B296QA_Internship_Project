@@ -1,16 +1,28 @@
 package getlandestate.hooks;
 
+import getlandestate.utilities.Authentication;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import getlandestate.utilities.Driver;
 
 public class Hooks {
+    public static void main(String[] args) {
 
+    }
+
+
+
+    String email = "admin@gmail.com";
+    String password = "admin123!";
+    public static RequestSpecification spec;
 
 //
 //    @Before("@pr_iphone or @pr_tesla")
