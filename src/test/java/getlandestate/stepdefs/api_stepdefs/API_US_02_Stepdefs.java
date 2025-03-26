@@ -22,7 +22,7 @@ public class API_US_02_Stepdefs {
         spec = new RequestSpecBuilder()
                 .setBaseUri(baseUri)
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", "Bearer " + generateToken("admin@gmail.com", "admin123!"))
+                .addHeader("Authorization", "Bearer " + generateToken())
                 .build();
     }
 
@@ -41,7 +41,7 @@ public class API_US_02_Stepdefs {
         response = given(spec).body(payload).when().post("{first}/{second}/{third}");
         response.prettyPrint();
     }
-    @Then("admin Goychak verifies the status code is {int}")
+    @Then("admin Goychak verifies the status code is {200}")
     public void admin_goychak_verifies_the_status_code_is(int statusCode) {
         actualData = response.as(CategoryPropertyKeyPojo.class);
         System.out.println("actual = " + actualData);
@@ -73,8 +73,8 @@ public class API_US_02_Stepdefs {
 
 
     }
-    @Then("admin Goychak verifies the status code of Get request is {int}")
-    public void admin_goychak_verifies_the_status_code_of_get_request_is(Integer statusCode) {
+    @Then("admin Goychak verifies the status code of Get request is {200}")
+    public void admin_goychak_verifies_the_status_code_of_get_request_is(int statusCode) {
 
     }
     @Then("admin Goychak verifies the response body of Get request")
