@@ -23,8 +23,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"getlandestate.stepdefs", "getlandestate.hooks"},
         dryRun = false,
-        tags =  "@api_us_02_tc_02"
-
+        tags =  "@api"
 
 
 )

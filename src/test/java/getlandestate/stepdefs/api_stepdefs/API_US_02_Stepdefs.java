@@ -22,7 +22,7 @@ public class API_US_02_Stepdefs {
         spec = new RequestSpecBuilder()
                 .setBaseUri(baseUri)
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", "Bearer " + generateToken("admin@gmail.com", "admin123!"))
+                .addHeader("Authorization", "Bearer " + generateToken())
                 .build();
     }
 
