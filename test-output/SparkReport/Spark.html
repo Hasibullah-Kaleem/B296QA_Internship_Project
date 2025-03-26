@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 21, 2025 06:52:30 pm</span></a>
+<a href="#"><span class="badge badge-primary">Mar 26, 2025 09:40:19 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 21, 2025 06:52:30 pm</h3>
+<h3>Mar 26, 2025 09:40:19 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 21, 2025 06:52:32 pm</h3>
+<h3>Mar 26, 2025 09:40:32 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='57%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='14%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"DB_US_05 Verify daily_reports table structure and data integrity":1.078
+"Advert Type API":10.285
 };
 </script>
 <div class="row">
@@ -172,44 +177,20 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@natalia</td>
-<td>2</td>
+<td>@api</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@natalia_db</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@db_us_05</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tc_02_daily_reports_table_data_integrity</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@tc_01_daily_reports_table_column_name_validation</td>
+<td>@api_us04</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -234,21 +215,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
-failGrandChild: 0,
+passGrandChild: 4,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -262,7 +243,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -270,99 +251,99 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@natalia</a><a class="dropdown-item" href="#">@natalia_db</a><a class="dropdown-item" href="#">@db_us_05</a><a class="dropdown-item" href="#">@tc_02_daily_reports_table_data_integrity</a><a class="dropdown-item" href="#">@tc_01_daily_reports_table_column_name_validation</a>
+<a class="dropdown-item" href="#">@api</a><a class="dropdown-item" href="#">@api_us04</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DB_US_05 Verify daily_reports table structure and data integrity</p>
+            <p class="name">Advert Type API</p>
             <p class="text-sm">
-              <span>18:52:31</span> / <span>00:00:01:078</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>9:40:21 PM</span> / <span>00:00:10:285</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DB_US_05 Verify daily_reports table structure and data integrity</h5>
-<span class='badge badge-success'>03.21.2025 18:52:31</span>
-<span class='badge badge-danger'>03.21.2025 18:52:32</span>
-<span class='badge badge-default'>00:00:01:078</span>
+<h5 class="test-status text-fail">Advert Type API</h5>
+<span class='badge badge-success'>03.26.2025 9:40:21 PM</span>
+<span class='badge badge-danger'>03.26.2025 9:40:32 PM</span>
+<span class='badge badge-default'>00:00:10:285</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-10 m-l-5"></div>
+<div class="m-t-10 m-l-5"> As a tester,
+I want to verify the functionality of the Advert Type API,
+So that it behaves as expected for various operations.</div>
 </div>
 </div>
 <div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate column names in daily_reports table</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
-                <span>Given Admin Natalia connects to the database</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
-                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports;"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheTableShouldHaveTheFollowingColumns(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Natalia verifies that the table should have the following columns:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td></tr><tr><td>id</td></tr><tr><td>date</td></tr><tr><td>number_of_contact_message</td></tr><tr><td>number_of_favorites</td></tr><tr><td>number_of_rent_adverts</td></tr><tr><td>number_of_sale_adverts</td></tr><tr><td>number_of_tour_requests</td></tr><tr><td>number_of_users</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
-                <span>And Admin Natalia closes the database connection</span>
-      <div>
-      </div>
-              </div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC01 as a tester I should be able to successfully create an advert type in the database</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
           </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Validate data integrity for id = 132 in daily_reports table</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
-                <span>Given Admin Natalia connects to the database</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.the_base_url_and_path_parameter_is_used(java.lang.String,java.lang.String)">
+                <span>Given the base URL "http://64.227.123.49:8092" and path parameter "/advert-types" is used</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
-                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports WHERE id = 132;"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.a_payload_is_created_with_title(java.lang.String)">
+                <span>And a payload is created with title "For sale by Hasibullah"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheRecordShouldHaveTheFollowingValues(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Natalia verifies that the record should have the following values:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td><td>Expected Value</td></tr><tr><td>id</td><td>132</td></tr><tr><td>date</td><td>2024-11-10</td></tr><tr><td>number_of_contact_message</td><td>101</td></tr><tr><td>number_of_favorites</td><td>56</td></tr><tr><td>number_of_rent_adverts</td><td>35</td></tr><tr><td>number_of_sale_adverts</td><td>57</td></tr><tr><td>number_of_tour_requests</td><td>60</td></tr><tr><td>number_of_users</td><td>268</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.a_post_request_is_sent_and_a_response_is_received()">
+                <span>When a post request is sent and a response is received</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
-                <span>And Admin Natalia closes the database connection</span>
+              <div class="step fail-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.the_status_code_should_be(int)">
+                <span>Then the status code should be 200</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected:<200> but was:<401>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.the_status_code_should_be(API_US_04_Stepdefs.java:47)
+	at ✽.the status code should be 200(file:///C:/Users/Dell/IdeaProjects/B296_QA_InternshipProject/src/test/resources/features/api_features/API_US_04.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.the_response_content_type_should_be(java.lang.String)">
+                <span>And the response content type should be "application/json; charset=utf-8"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_04_Stepdefs.the_response_name_should_be(java.lang.String)">
+                <span>And the response name should be "Apartment by Hasibullah"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>getlandestate.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>failed_screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -385,160 +366,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@natalia</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@natalia</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@natalia_db</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@natalia_db</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@db_us_05</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@db_us_05</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tc_02_daily_reports_table_data_integrity</p>
+<p class="name">@api</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_02_daily_reports_table_data_integrity</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@api</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -549,13 +392,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:40:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01 as a tester I should be able to successfully create an advert type in the database</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+<span class="badge badge-default">Advert Type API.TC01 as a tester I should be able to successfully create an advert type in the database</span>
 </div>
 </td>
 </tr>
@@ -566,15 +409,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@tc_01_daily_reports_table_column_name_validation</p>
+<p class="name">@api_us04</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_01_daily_reports_table_column_name_validation</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@api_us04</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -585,13 +428,65 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:40:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01 as a tester I should be able to successfully create an advert type in the database</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
+<span class="badge badge-default">Advert Type API.TC01 as a tester I should be able to successfully create an advert type in the database</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:40:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Then the status code should be 200</a>
+<div class="">
+<span class="badge badge-default">Advert Type API.TC01 as a tester I should be able to successfully create an advert type in the database.Then the status code should be 200</span>
 </div>
 </td>
 </tr>
