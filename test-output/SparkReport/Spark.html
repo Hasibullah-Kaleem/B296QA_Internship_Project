@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 21, 2025 06:52:30 pm</span></a>
+<a href="#"><span class="badge badge-primary">Mar 26, 2025 05:12:17 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,19 +66,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 21, 2025 06:52:30 pm</h3>
+<h3>Mar 26, 2025 05:12:17 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 21, 2025 06:52:32 pm</h3>
+<h3>Mar 26, 2025 05:12:21 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -101,7 +101,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> features passed
+<b>2</b> features passed
 </small>
 </div>
 <div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"DB_US_05 Verify daily_reports table structure and data integrity":1.078
+"API_US_03 API Validation for the advert-controller":2.684,"API_US_11 API Validation for the daily-report-controller":0.322
 };
 </script>
 <div class="row">
@@ -172,6 +172,30 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@api</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc_01_adverts_response_body_validation_for_get_request</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@api_us_11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@natalia</td>
 <td>2</td>
 <td>0</td>
@@ -180,23 +204,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@natalia_db</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@db_us_05</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tc_02_daily_reports_table_data_integrity</td>
+<td>@tc_01_daily-report_response_structure_validation</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -204,8 +212,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@tc_01_daily_reports_table_column_name_validation</td>
+<td>@api_us_03</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@natalia_api</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -234,7 +250,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 2,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -270,7 +286,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@natalia</a><a class="dropdown-item" href="#">@natalia_db</a><a class="dropdown-item" href="#">@db_us_05</a><a class="dropdown-item" href="#">@tc_02_daily_reports_table_data_integrity</a><a class="dropdown-item" href="#">@tc_01_daily_reports_table_column_name_validation</a>
+<a class="dropdown-item" href="#">@api</a><a class="dropdown-item" href="#">@tc_01_adverts_response_body_validation_for_get_request</a><a class="dropdown-item" href="#">@api_us_11</a><a class="dropdown-item" href="#">@natalia</a><a class="dropdown-item" href="#">@tc_01_daily-report_response_structure_validation</a><a class="dropdown-item" href="#">@api_us_03</a><a class="dropdown-item" href="#">@natalia_api</a>
 </ul>
 </li>
 </ul>
@@ -281,9 +297,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DB_US_05 Verify daily_reports table structure and data integrity</p>
+            <p class="name">API_US_03 API Validation for the advert-controller</p>
             <p class="text-sm">
-              <span>18:52:31</span> / <span>00:00:01:078</span>
+              <span>17:12:18</span> / <span>00:00:02:684</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -291,10 +307,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DB_US_05 Verify daily_reports table structure and data integrity</h5>
-<span class='badge badge-success'>03.21.2025 18:52:31</span>
-<span class='badge badge-danger'>03.21.2025 18:52:32</span>
-<span class='badge badge-default'>00:00:01:078</span>
+<h5 class="test-status text-pass">API_US_03 API Validation for the advert-controller</h5>
+<span class='badge badge-success'>03.26.2025 17:12:18</span>
+<span class='badge badge-danger'>03.26.2025 17:12:21</span>
+<span class='badge badge-default'>00:00:02:684</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -306,63 +322,89 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate column names in daily_reports table</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate the response body of the /adverts/cities/:limit API</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
-                <span>Given Admin Natalia connects to the database</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.theAPIEndpointIsAvailable(java.lang.String)">
+                <span>Given the API endpoint "/adverts/cities/:limit" is available</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
-                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports;"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaSendsAGETRequestToTheAdvertsEndpoint()">
+                <span>When Admin Natalia sends a GET request to the adverts endpoint</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheTableShouldHaveTheFollowingColumns(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Natalia verifies that the table should have the following columns:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td></tr><tr><td>id</td></tr><tr><td>date</td></tr><tr><td>number_of_contact_message</td></tr><tr><td>number_of_favorites</td></tr><tr><td>number_of_rent_adverts</td></tr><tr><td>number_of_sale_adverts</td></tr><tr><td>number_of_tour_requests</td></tr><tr><td>number_of_users</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaVerifiesThatTheResponseStatusCodeIs(int)">
+                <span>Then Admin Natalia verifies that the response status code is 200</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
-                <span>And Admin Natalia closes the database connection</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaVerifiesThatTheResponseBodyMatchesTheExpectedData()">
+                <span>And Admin Natalia verifies that the response body matches the expected data</span>
       <div>
       </div>
               </div>
           </div>
         </div>
   </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">API_US_11 API Validation for the daily-report-controller</p>
+            <p class="text-sm">
+              <span>17:12:21</span> / <span>00:00:00:322</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">API_US_11 API Validation for the daily-report-controller</h5>
+<span class='badge badge-success'>03.26.2025 17:12:21</span>
+<span class='badge badge-danger'>03.26.2025 17:12:21</span>
+<span class='badge badge-default'>00:00:00:322</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Validate data integrity for id = 132 in daily_reports table</div>
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Validate the response structure of the /daily-report API</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaConnectsToTheDatabase()">
-                <span>Given Admin Natalia connects to the database</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.theAPIEndpointIsAvailable(java.lang.String)">
+                <span>Given the API endpoint "/daily-report" is available</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaExecutesTheQuery(java.lang.String)">
-                <span>When Admin Natalia executes the query "SELECT * FROM daily_reports WHERE id = 132;"</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaSendsAGETRequestToTheDailyReportEndpoint()">
+                <span>When Admin Natalia sends a GET request to the daily-report endpoint</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaVerifiesThatTheRecordShouldHaveTheFollowingValues(io.cucumber.datatable.DataTable)">
-                <span>Then Admin Natalia verifies that the record should have the following values:</span>
-      <div><table class='markup-table table '><tr><td>Column Name</td><td>Expected Value</td></tr><tr><td>id</td><td>132</td></tr><tr><td>date</td><td>2024-11-10</td></tr><tr><td>number_of_contact_message</td><td>101</td></tr><tr><td>number_of_favorites</td><td>56</td></tr><tr><td>number_of_rent_adverts</td><td>35</td></tr><tr><td>number_of_sale_adverts</td><td>57</td></tr><tr><td>number_of_tour_requests</td><td>60</td></tr><tr><td>number_of_users</td><td>268</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaVerifiesThatTheResponseStatusCodeIs(int)">
+                <span>Then Admin Natalia verifies that the response status code is 200</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.db_stepdefs.DB_US_03_04_05_Stepdefs.adminNataliaClosesTheDatabaseConnection()">
-                <span>And Admin Natalia closes the database connection</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.API_US_03_US_11_Stepdefs.adminNataliaVerifiesThatTheResponseBodyOfTheAPIMatchesTheExpectedStructure(java.lang.String)">
+                <span>And Admin Natalia verifies that the response body of the "/daily-report" API matches the expected structure</span>
       <div>
       </div>
               </div>
@@ -385,10 +427,128 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@api</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@api</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate the response body of the /adverts/cities/:limit API</a>
+<div class="">
+<span class="badge badge-default">API_US_03 API Validation for the advert-controller.Validate the response body of the /adverts/cities/:limit API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Validate the response structure of the /daily-report API</a>
+<div class="">
+<span class="badge badge-default">API_US_11 API Validation for the daily-report-controller.Validate the response structure of the /daily-report API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc_01_adverts_response_body_validation_for_get_request</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc_01_adverts_response_body_validation_for_get_request</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate the response body of the /adverts/cities/:limit API</a>
+<div class="">
+<span class="badge badge-default">API_US_03 API Validation for the advert-controller.Validate the response body of the /adverts/cities/:limit API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@api_us_11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@api_us_11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Validate the response structure of the /daily-report API</a>
+<div class="">
+<span class="badge badge-default">API_US_11 API Validation for the daily-report-controller.Validate the response structure of the /daily-report API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -413,113 +573,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
+<td>17:12:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<a href="#" class="linked" test-id='1' id='2'>Validate the response body of the /adverts/cities/:limit API</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
+<span class="badge badge-default">API_US_03 API Validation for the advert-controller.Validate the response body of the /adverts/cities/:limit API</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
+<td>17:12:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
+<a href="#" class="linked" test-id='10' id='11'>Validate the response structure of the /daily-report API</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@natalia_db</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@natalia_db</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@db_us_05</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@db_us_05</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
-<div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+<span class="badge badge-default">API_US_11 API Validation for the daily-report-controller.Validate the response structure of the /daily-report API</span>
 </div>
 </td>
 </tr>
@@ -532,12 +600,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tc_02_daily_reports_table_data_integrity</p>
+<p class="name">@tc_01_daily-report_response_structure_validation</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_02_daily_reports_table_data_integrity</h4>
+<h4>@tc_01_daily-report_response_structure_validation</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -551,11 +619,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:32 pm</td>
+<td>17:12:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Validate data integrity for id = 132 in daily_reports table</a>
+<a href="#" class="linked" test-id='10' id='11'>Validate the response structure of the /daily-report API</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate data integrity for id = 132 in daily_reports table</span>
+<span class="badge badge-default">API_US_11 API Validation for the daily-report-controller.Validate the response structure of the /daily-report API</span>
 </div>
 </td>
 </tr>
@@ -568,12 +636,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tc_01_daily_reports_table_column_name_validation</p>
+<p class="name">@api_us_03</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tc_01_daily_reports_table_column_name_validation</h4>
+<h4>@api_us_03</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -587,11 +655,57 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:52:31 pm</td>
+<td>17:12:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Validate column names in daily_reports table</a>
+<a href="#" class="linked" test-id='1' id='2'>Validate the response body of the /adverts/cities/:limit API</a>
 <div class="">
-<span class="badge badge-default">DB_US_05 Verify daily_reports table structure and data integrity.Validate column names in daily_reports table</span>
+<span class="badge badge-default">API_US_03 API Validation for the advert-controller.Validate the response body of the /adverts/cities/:limit API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@natalia_api</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@natalia_api</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate the response body of the /adverts/cities/:limit API</a>
+<div class="">
+<span class="badge badge-default">API_US_03 API Validation for the advert-controller.Validate the response body of the /adverts/cities/:limit API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:12:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Validate the response structure of the /daily-report API</a>
+<div class="">
+<span class="badge badge-default">API_US_11 API Validation for the daily-report-controller.Validate the response structure of the /daily-report API</span>
 </div>
 </td>
 </tr>
