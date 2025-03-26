@@ -31,9 +31,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="db7f6b2d-48d5-4df4-b8bb-366014d2a610" object-ref="consoles/GetLandEstate" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="db7f6b2d-48d5-4df4-b8bb-366014d2a610" />

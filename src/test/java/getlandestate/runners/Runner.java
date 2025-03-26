@@ -19,11 +19,11 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
-        features = "src/test/resources/features/db_features",
-        glue = {"getlandestate.stepdefs.db_stepdefs", "getlandestate.hooks"},
+        features = "src/test/resources/features/api_features",
+        glue = {"getlandestate.stepdefs.api_stepdefs", "getlandestate.hooks"},
         dryRun = false,
 
-        tags = "@db and @db_us_09"
+        tags = "@ApiManager and @api_us_08"
 
 
 )

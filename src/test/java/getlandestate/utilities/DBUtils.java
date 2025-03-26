@@ -98,6 +98,7 @@ public class DBUtils {
             }
             if (connection != null) {
                 connection.close();
+                System.out.println(" connection closed successfully.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
