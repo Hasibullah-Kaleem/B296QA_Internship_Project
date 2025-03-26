@@ -27,13 +27,13 @@ public class Hooks {
 
     public static RequestSpecification spec;
 
-    @Before("@api")
+    @Before("@api_us04")
     public void setUpAPI(){
 
         spec = new RequestSpecBuilder()
                 .setBaseUri(ConfigReader.getProperty("apiBaseUrl"))
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", Authentication.generateToken())
+                .addHeader("Authorization", Authentication.generateToken("admin@gmail.com","admin123!"))
                 .build();
 
     }
