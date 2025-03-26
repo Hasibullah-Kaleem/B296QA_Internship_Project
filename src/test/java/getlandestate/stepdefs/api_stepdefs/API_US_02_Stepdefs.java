@@ -41,7 +41,7 @@ public class API_US_02_Stepdefs {
         response = given(spec).body(payload).when().post("{first}/{second}/{third}");
         response.prettyPrint();
     }
-    @Then("admin Goychak verifies the status code is {200}")
+    @Then("admin Goychak verifies the status code is {int}")
     public void admin_goychak_verifies_the_status_code_is(int statusCode) {
         actualData = response.as(CategoryPropertyKeyPojo.class);
         System.out.println("actual = " + actualData);
@@ -73,7 +73,7 @@ public class API_US_02_Stepdefs {
 
 
     }
-    @Then("admin Goychak verifies the status code of Get request is {200}")
+    @Then("admin Goychak verifies the status code of Get request is {int}")
     public void admin_goychak_verifies_the_status_code_of_get_request_is(int statusCode) {
 
     }
