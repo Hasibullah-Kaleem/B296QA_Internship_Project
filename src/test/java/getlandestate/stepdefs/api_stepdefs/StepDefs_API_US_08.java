@@ -32,6 +32,7 @@ public class StepDefs_API_US_08 {
     @And("the user sets the expected data for the logs")
     public void theUserSetsTheExpectedDataForTheLogs() {
         // Add expected data setup if needed
+
     }
 
     @When("the user sends a GET request to the logs api and gets the response")
@@ -53,6 +54,7 @@ public class StepDefs_API_US_08 {
         assertEquals("application/json", response.getContentType());
         // Add further JSON data validation if required
     }
+
 
 
 }

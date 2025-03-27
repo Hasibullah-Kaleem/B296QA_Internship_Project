@@ -1,4 +1,4 @@
-@ApiManager
+@ApiManager @api
 Feature: Log_controller_APIValidation
   @api_us_08
   Scenario: Log_controller_APIValidation
