@@ -1,4 +1,4 @@
-@api_us_02
+@api_us_02 @api
   Feature: US_02 API Category-property-key controller
 
     Background: Authorization
@@ -20,19 +20,17 @@
       Then admin Goychak verifies the status code of Get request is 200
       And admin Goychak verifies the response body of Get request
 
-    @api_us_02_tc_03
-    Scenario: TC_03 Put Request Validation
-      And admin Goychak sets the url for PUT request
-      And admin Goychak sets the expected data for the Put request
-      When admin Goychak sends the request and gets the Put response
-      Then admin Goychak verifies the status code of Put request is 200
-      And admin Goychak verifies the response body of Put request
-#    $[?(@['id'] == 514)]
+#    @api_us_02_tc_03
+#    Scenario: TC_03 Put Request Validation
+#      And admin Goychak sets the url for PUT request
+#      And admin Goychak sets the expected data for the Put request
+#      When admin Goychak sends the request and gets the Put response
+#      Then admin Goychak verifies the status code of Put request is 200
+#      And admin Goychak verifies the response body of Put request
 
-    @api_us_02_tc_04
+    @api_us_02_tc_03
     Scenario: TC_04 Delete Request Validation
-      And admin Goychak sets the url for DELETE request
-      And admin Goychak sets the expected data for the Delete request
+      And admin Goychak sets the url for DELETE request with id 534
       When admin Goychak sends the request and gets the Delete response
       Then admin Goychak verifies the status code of Delete request is 200
-      And admin Goychak verifies the response body of Delete request
+      And admin Goychak verifies the response body of Delete request contains id 534

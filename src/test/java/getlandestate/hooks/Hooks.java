@@ -27,7 +27,7 @@ public class Hooks {
 
     public static RequestSpecification spec;
 
-    @Before("@api_us04")
+    @Before("@api")
     public void setUpAPI(){
 
         spec = new RequestSpecBuilder()
