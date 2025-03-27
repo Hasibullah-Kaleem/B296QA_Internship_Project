@@ -18,11 +18,12 @@ public class API_US_02_Stepdefs {
     private Response response;
     @Given("user Goychak is authorised as ADMIN")
     public void user_goychak_is_authorised_as_admin() {
+
         String baseUri = "http://64.227.123.49:8092";
         spec = new RequestSpecBuilder()
                 .setBaseUri(baseUri)
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", "Bearer " + generateToken())
+                .addHeader("Authorization", "Bearer " + generateToken("admin@gmail.com","admin123!"))
                 .build();
     }
 

@@ -23,7 +23,7 @@ public class Authentication {
                 .post(url);
 
         //return token
-       return response.jsonPath().getString("token");
+       return "Bearer " + response.jsonPath().getString("token");
     }
 
 }
