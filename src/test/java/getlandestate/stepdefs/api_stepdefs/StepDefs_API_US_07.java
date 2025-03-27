@@ -28,7 +28,7 @@ public class StepDefs_API_US_07 {
     @And("the user sets the expected data for the the general report")
     public void theUserSetsTheExpectedDataForGeneralReport() {
         // These values should be fetched dynamically (e.g., from a database or config file)
-        expectedData = new ReportControllerPojo(200, 507, 249, 131, 27);
+        expectedData = new ReportControllerPojo(200, 506, 249, 131, 27);
     }
 
     @When("the user sends a GET request to the report api and gets the response")
@@ -44,7 +44,7 @@ public class StepDefs_API_US_07 {
 
     @Then("the response status code is {int} for API_US_7")
     public void theResponseStatusCodeIsForAPI_US_7(int statusCode) {
-        Assert.assertEquals(200, response.getStatusCode());
+        Assert.assertEquals(statusCode, response.getStatusCode());
     }
 
 

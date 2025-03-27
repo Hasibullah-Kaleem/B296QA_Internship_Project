@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         glue = {"getlandestate.stepdefs.api_stepdefs", "getlandestate.hooks"},
         dryRun = false,
 
-        tags = "@ApiManager and @api_us_07"
+        tags = "@ApiManager"
 
 
 )
