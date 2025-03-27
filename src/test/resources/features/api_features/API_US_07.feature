@@ -8,4 +8,4 @@ Feature: Report_controller_APIValidation
     And the user sets the expected data for the the general report
     When the user sends a GET request to the report api and gets the response
     Then the response status code is 200 for API_US_7
-    And the user verifies the response data for the logs for API_US_7
+    And the user verifies the response data for the the general report for API_US_7

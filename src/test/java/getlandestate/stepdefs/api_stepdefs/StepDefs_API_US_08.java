@@ -44,7 +44,7 @@ public class StepDefs_API_US_08 {
         response.prettyPrint(); // Log response for debugging
     }
 
-    @Then("the response status code is {int} for API_US_{int}")
+    @Then("the response status code is 200 for API_US_8")
     public void theResponseStatusCodeIsForAPI_US_(int expectedStatusCode, int apiId) {
         assertEquals("❌ Unexpected status code for API_US_" + apiId, expectedStatusCode, response.getStatusCode());
     }

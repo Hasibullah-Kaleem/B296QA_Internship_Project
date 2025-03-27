@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">mars 26, 2025 06:23:13 PM</span></a>
+<a href="#"><span class="badge badge-primary">mars 27, 2025 11:19:11 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>mars 26, 2025 06:23:13 PM</h3>
+<h3>mars 27, 2025 11:19:11 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>mars 26, 2025 06:23:15 PM</h3>
+<h3>mars 27, 2025 11:19:13 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Log_controller_APIValidation":1.532
+"Report_controller_APIValidation":1.844
 };
 </script>
 <div class="row">
@@ -172,6 +172,14 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@api</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@ApiManager</td>
 <td>1</td>
 <td>0</td>
@@ -180,7 +188,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@api_us_08</td>
+<td>@api_us_07</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -246,7 +254,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@ApiManager</a><a class="dropdown-item" href="#">@api_us_08</a>
+<a class="dropdown-item" href="#">@api</a><a class="dropdown-item" href="#">@ApiManager</a><a class="dropdown-item" href="#">@api_us_07</a>
 </ul>
 </li>
 </ul>
@@ -257,9 +265,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Log_controller_APIValidation</p>
+            <p class="name">Report_controller_APIValidation</p>
             <p class="text-sm">
-              <span>18:23:13</span> / <span>00:00:01:532</span>
+              <span>11:19:11</span> / <span>00:00:01:844</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -267,10 +275,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Log_controller_APIValidation</h5>
-<span class='badge badge-success'>03.26.2025 18:23:13</span>
-<span class='badge badge-danger'>03.26.2025 18:23:14</span>
-<span class='badge badge-default'>00:00:01:532</span>
+<h5 class="test-status text-pass">Report_controller_APIValidation</h5>
+<span class='badge badge-success'>03.27.2025 11:19:11</span>
+<span class='badge badge-danger'>03.27.2025 11:19:13</span>
+<span class='badge badge-default'>00:00:01:844</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,33 +290,33 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Log_controller_APIValidation</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Report_controller_APIValidation</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_08.theUsersSetsTheUrlForGetUserSLogByIdForAPI_US_(int)">
-                <span>And the users sets the url for Get user's log by id for API_US_8</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_07.theUsersSetsTheUrlForReport()">
+                <span>And the users sets the url for Get the general report of total adverts, users, advert types, tour requests and categorie for API_US_7</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_08.theUserSetsTheExpectedDataForTheLogs()">
-                <span>And the user sets the expected data for the logs</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_07.theUserSetsTheExpectedDataForGeneralReport()">
+                <span>And the user sets the expected data for the the general report</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_08.theUserSendsAGETRequestToApiLogAndGetsTheResponse()">
-                <span>When the user sends a GET request to the logs api and gets the response</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_07.theUserSendsAGETRequestToReportAPI()">
+                <span>When the user sends a GET request to the report api and gets the response</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_08.theResponseStatusCodeIsForAPI_US_(int,int)">
-                <span>Then the response status code is 200 for API_US_8</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_07.theResponseStatusCodeIsForAPI_US_7(int)">
+                <span>Then the response status code is 200 for API_US_7</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_08.theUserVerifiesTheResponseDataForTheLogsForAPI_US_(int)">
-                <span>And the user verifies the response data for the logs for API_US_8</span>
+              <div class="step pass-bg" title="getlandestate.stepdefs.api_stepdefs.StepDefs_API_US_07.theUserVerifiesTheResponseDataForAPI_US_7()">
+                <span>And the user verifies the response data for the the general report for API_US_7</span>
       <div>
       </div>
               </div>
@@ -331,10 +339,46 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@api</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@api</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:19:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Report_controller_APIValidation</a>
+<div class="">
+<span class="badge badge-default">Report_controller_APIValidation.Report_controller_APIValidation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -359,11 +403,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:23:13 PM</td>
+<td>11:19:11 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Log_controller_APIValidation</a>
+<a href="#" class="linked" test-id='1' id='2'>Report_controller_APIValidation</a>
 <div class="">
-<span class="badge badge-default">Log_controller_APIValidation.Log_controller_APIValidation</span>
+<span class="badge badge-default">Report_controller_APIValidation.Report_controller_APIValidation</span>
 </div>
 </td>
 </tr>
@@ -376,12 +420,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@api_us_08</p>
+<p class="name">@api_us_07</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@api_us_08</h4>
+<h4>@api_us_07</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -395,11 +439,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:23:13 PM</td>
+<td>11:19:11 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Log_controller_APIValidation</a>
+<a href="#" class="linked" test-id='1' id='2'>Report_controller_APIValidation</a>
 <div class="">
-<span class="badge badge-default">Log_controller_APIValidation.Log_controller_APIValidation</span>
+<span class="badge badge-default">Report_controller_APIValidation.Report_controller_APIValidation</span>
 </div>
 </td>
 </tr>
