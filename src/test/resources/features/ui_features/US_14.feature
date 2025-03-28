@@ -1,4 +1,5 @@
 @us_14
+<<<<<<< Updated upstream
   Feature: Manager's Scheduling a Property Tour
 
     Background: Manager Login and Navigation to Properties Page
@@ -20,3 +21,7 @@
     Scenario: User attempts to submit a tour request without selecting a date and time
       And User clicks on the Submit a Tour Request button without selecting a Tour Date or Tour Time
       Then User should see an error message asking them to select both a Tour Date and Tour Time before submitting the request
+=======
+  Feature:
+    Scenario:
+>>>>>>> Stashed changes

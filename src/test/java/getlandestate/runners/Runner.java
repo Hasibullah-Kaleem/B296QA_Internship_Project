@@ -20,10 +20,12 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
+
         features = "src/test/resources/features",
         glue = {"getlandestate.stepdefs", "getlandestate.hooks"},
         dryRun = false,
         tags =  "  @api_02"
+
 
 
 )

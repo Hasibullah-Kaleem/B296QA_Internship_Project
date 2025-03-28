@@ -21,13 +21,14 @@ import java.util.concurrent.TimeUnit;
 public class Stepdefs_US_14 {
     PropertyPage propertyPage = new PropertyPage();
     Faker faker = new Faker();
+
     @And("User schedules a tour by selecting a Tour Date and Tour Time from the options on the right side of the page")
     public void userSchedulesATourBySelectingATourDateAndTourTimeFromTheOptionsOnTheRightSideOfThePage() {
         Date futureDate = faker.date().future(365, TimeUnit.DAYS);
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
         String formattedDate = dateFormat.format(futureDate);
         propertyPage.tourDate.sendKeys(formattedDate);
-        ReusableMethods.ddmIndex(propertyPage.tourTime,20);
+        ReusableMethods.ddmIndex(propertyPage.tourTime, 20);
         WaitUtils.waitFor(5);
     }
 
@@ -56,4 +57,5 @@ public class Stepdefs_US_14 {
         WaitUtils.waitFor(2);
         Driver.closeDriver();
     }
+
 }
