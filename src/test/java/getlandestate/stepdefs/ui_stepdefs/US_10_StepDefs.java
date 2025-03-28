@@ -45,11 +45,11 @@ public class US_10_StepDefs {
     }
     @When("customer enters valid email")
     public void customer_enters_valid_email() {
-        loginPage.emailInput.sendKeys(ConfigReader.getProperty("customerEmail"));
+        loginPage.emailInput.sendKeys(ConfigReader.getProperty("UserEmail"));
     }
     @When("customer enters valid password")
     public void customer_enters_valid_password() {
-        loginPage.passwordInput.sendKeys(ConfigReader.getProperty("customerPassword"));
+        loginPage.passwordInput.sendKeys(ConfigReader.getProperty("UserPassword"));
     }
     @When("customer clicks of login button")
     public void customer_clicks_of_login_button() throws IOException {

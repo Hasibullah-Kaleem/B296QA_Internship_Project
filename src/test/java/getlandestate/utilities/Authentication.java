@@ -4,35 +4,33 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 
+import org.checkerframework.checker.units.qual.C;
+
+
 import static io.restassured.RestAssured.given;
 
 public class Authentication {
 
-/*
-    public static void main(String[] args) {
+    public static String generateToken(String email, String password){
 
-        System.out.println(generatetoken("boukmanager@gmail.com", "12345678Bouk@"));
+        String url="http://64.227.123.49:8092/users/login";
+        String credentials = "{\n" +
+                "  \"email\": \""+email+"\",\n" +
+                "  \"password\": \""+password+"\"\n" +
+                "}";
 
-        //   System.out.println(token("manager@gmail.com", "manager123!"));
-    }
-*/
-    public static String generateToken(String email, String password) {
+        Response response=given()
 
-
-        String url = "http://64.227.123.49:8092/users/login";
-        String body = "{\"email\": \"" + email + "\",\"password\": \"" + password + "\"}";
-
-
-        Response response = given()
-                .when()
-                .body(body)
+                .body(credentials)
                 .contentType(ContentType.JSON)
+                .when()
                 .post(url);
 
-
-        return response.jsonPath().getString("token");
-
+        //return token
+       return "Bearer " + response.jsonPath().getString("token");
     }
 
-
 }
+
+
+

@@ -5,6 +5,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
@@ -20,11 +21,11 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        features = "src/test/resources/features/db_features",
-        glue = {"getlandestate.stepdefs.db_stepdefs", "getlandestate.hooks"},
+        features = "src/test/resources/features",
+        glue = {"getlandestate.stepdefs", "getlandestate.hooks"},
         dryRun = false,
+        tags =  "  @api_02"
 
-        tags = "@db"
 
 
 )

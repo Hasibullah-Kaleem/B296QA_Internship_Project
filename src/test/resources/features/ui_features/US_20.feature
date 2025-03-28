@@ -1,4 +1,4 @@
-@us_20
+@us_20 @natalia_ui @natalia
   Feature: US_20 Manager's Contact Message Management
 
     As a Manager

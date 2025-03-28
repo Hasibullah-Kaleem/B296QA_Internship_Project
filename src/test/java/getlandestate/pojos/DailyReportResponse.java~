@@ -1,0 +1,82 @@
+package getlandestate.pojos;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Map;
+
+public class DailyReportResponse {
+
+    private Map<String, Integer> ContactMessages;
+    private Map<String, Integer> Favorites;
+    private Map<String, Integer> RentAdverts;
+    private Map<String, Integer> SaleAdverts;
+    private Map<String, Integer> TourRequests;
+    private Map<String, Integer> Users;
+
+    @JsonProperty("ContactMessages") // Maps "ContactMessages" from JSON to "contactMessages" field
+    private Map<String, Integer> contactMessages;
+
+    @JsonProperty("Favorites")
+    private Map<String, Integer> favorites;
+
+    @JsonProperty("RentAdverts")
+    private Map<String, Integer> rentAdverts;
+
+    @JsonProperty("SaleAdverts")
+    private Map<String, Integer> saleAdverts;
+
+    @JsonProperty("TourRequests")
+    private Map<String, Integer> tourRequests;
+
+    @JsonProperty("Users")
+    private Map<String, Integer> users;
+
+    // Getters and Setters
+    public Map<String, Integer> getContactMessages() {
+        return ContactMessages;
+    }
+
+    public void setContactMessages(Map<String, Integer> contactMessages) {
+        ContactMessages = contactMessages;
+    }
+
+    public Map<String, Integer> getFavorites() {
+        return Favorites;
+    }
+
+    public void setFavorites(Map<String, Integer> favorites) {
+        Favorites = favorites;
+    }
+
+    public Map<String, Integer> getRentAdverts() {
+        return RentAdverts;
+    }
+
+    public void setRentAdverts(Map<String, Integer> rentAdverts) {
+        RentAdverts = rentAdverts;
+    }
+
+    public Map<String, Integer> getSaleAdverts() {
+        return SaleAdverts;
+    }
+
+    public void setSaleAdverts(Map<String, Integer> saleAdverts) {
+        SaleAdverts = saleAdverts;
+    }
+
+    public Map<String, Integer> getTourRequests() {
+        return TourRequests;
+    }
+
+    public void setTourRequests(Map<String, Integer> tourRequests) {
+        TourRequests = tourRequests;
+    }
+
+    public Map<String, Integer> getUsers() {
+        return Users;
+    }
+
+    public void setUsers(Map<String, Integer> users) {
+        Users = users;
+    }
+}

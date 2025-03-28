@@ -319,7 +319,7 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-        //Mukaddes ekledi .Aciklamayi chatgbt ye sordum
+    //Mukaddes ekledi .Aciklamayi chatgbt ye sordum
     /**
      * ResultSet'ten bir satırdaki tüm sütun verilerini alır ve bir liste olarak döner.
      *

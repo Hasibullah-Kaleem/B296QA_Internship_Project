@@ -1,4 +1,4 @@
-@us_19
+@us_19 @natalia_ui @natalia
   Feature: US_19 Customer's Contact Us Form
 
     Background: Navigate home page
