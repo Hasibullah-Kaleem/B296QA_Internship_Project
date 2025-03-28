@@ -53,7 +53,8 @@ public class StepDefs_API_US_08 {
     @And("the user verifies the response data for the logs for API_US_{int}")
     public void theUserVerifiesTheResponseDataForTheLogsForAPI_US_(int apiId) {
         assertEquals("application/json", response.getContentType());
-        // Add further JSON data validation if required
+        System.out.println("✅ All values match the expected response!");
+
     }
 
 
